@@ -1,3 +1,10 @@
+ARTICLES
+http://aclweb.org/anthology/S/S12/S12-1051.pdf
+http://www.aclweb.org/anthology/S/S12/S12-1060.pdf
+
+DATA
+http://www.cs.york.ac.uk/semeval-2012/task6/index.php?id=data
+
 STEPS
 + initial arrangement
 - preprocessing --> JAGAR
