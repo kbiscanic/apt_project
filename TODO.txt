@@ -7,6 +7,7 @@ http://www.cs.york.ac.uk/semeval-2012/task6/index.php?id=data
 
 STEPS
 + initial arrangement
+- model --> JAGAR
 - preprocessing --> JAGAR
 - ngram overlap --> JAGAR
 - wordnet-aug overlap --> KIKI
@@ -15,4 +16,4 @@ STEPS
 - normalized differences A,C --> KARLO
 - shallow NERC --> KIKI
 - numbers overlap --> KARLO
-- model learning --> JAGAR
+- model learning --> TBD
