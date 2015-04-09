@@ -1,0 +1,11 @@
+STEPS
++ initial arrangement
+- preprocessing --> JAGAR
+- ngram overlap --> JAGAR
+- wordnet-aug overlap --> KIKI
+- weighted word overlap --> KARLO
+- vector-space similarity --> KIKI
+- normalized differences A,C --> KARLO
+- shallow NERC --> KIKI
+- numbers overlap --> KARLO
+- model learning --> JAGAR
