@@ -9,7 +9,7 @@ class Model:
 
     def _preprocess_strip(self, sentence):
         # TODO - da li treba maknuti i . , ? ! [ ] ' "
-        return sentence.strip().translate({'\\': '', '/': '', '-': '', '(': '', ')': '', '<': '', '>': ''})
+        return sentence.strip().translate(None, '\\/-()<>')
 
     def _preprocess_currency(self, sentence):
         # TODO
