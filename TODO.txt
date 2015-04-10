@@ -7,7 +7,7 @@ http://www.cs.york.ac.uk/semeval-2012/task6/index.php?id=data
 
 STEPS
 + initial arrangement
-- model --> JAGAR
++ model --> JAGAR
 - preprocessing --> JAGAR
 - ngram overlap --> JAGAR
 - wordnet-aug overlap --> KIKI

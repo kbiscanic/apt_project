@@ -1,28 +1,47 @@
+import nltk
+
 class Model:
-    def _preprocess_strip(self):
-        return
+    _NLTK_DATA_PATH = '../data/nltk'
 
-    def _preprocess_currency(self):
-        return
+    def __init__(self):
+        if self._NLTK_DATA_PATH not in nltk.data.path:
+            nltk.data.path.append(self._NLTK_DATA_PATH)
 
-    def _preprocess_tokenize(self):
-        return
+    def _preprocess_strip(self, sentence):
+        # TODO - da li treba maknuti i . , ? ! [ ] ' "
+        return sentence.strip().translate(None, '\\/-()<>')
 
-    def _preprocess_compounds(self):
-        return
+    def _preprocess_currency(self, sentence):
+        # TODO
+        return sentence
 
-    def _preprocess_pos_tagging(self):
-        return
+    def _preprocess_tokenize(self, sentence):
+        return nltk.word_tokenize(sentence)
 
-    def _preprocess_stopwords(self):
-        return
+    def _preprocess_compounds(self, tokens):
+        # TODO
+        return tokens
 
-    def preprocess(self, x):
-        # TODO - vraca preprocesirani niz tokena (tuplea) za 1 primjer
-        return
+    def _preprocess_pos_tagging(self, tokens):
+        return nltk.pos_tag(tokens)
+
+    def _preprocess_stopwords(self, tokens):
+        stopwords = nltk.corpus.stopwords.words('english')
+        return [x for x in tokens if x[0] not in stopwords]
+
+    # vraca preprocesirani niz tokena za 1 recenicu
+    def preprocess(self, sentence):
+        sentence = self._preprocess_strip(sentence)
+        sentence = self._preprocess_currency(sentence)
+        tokens = self._preprocess_tokenize(sentence)
+        tokens = self._preprocess_compounds(tokens)
+        tokens = self._preprocess_pos_tagging(tokens)
+        tokens = self._preprocess_stopwords(tokens)
+        return tokens
     
     def get_features(self, X):
-        # TODO - pozvati preprocess i zatim potrebne funkcije za izvaditi sve numericke znacajke
+        # TODO - pozvati za obje recenice preprocess i zatim potrebne funkcije za izvaditi sve numericke znacajke
+        # jedan primjer je lista od 2 recenice (stringa)
         # ako je X jedan primjer vratiti listu znacajki za njega
         # ako je X lista primjera vratiti listu znacajki za svaki primjer
         return
