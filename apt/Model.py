@@ -1,5 +1,6 @@
 import nltk
 import re
+import numpy as np
 
 class Model:
     _NLTK_DATA_PATH = '../data/nltk'
@@ -66,14 +67,27 @@ class Model:
             tokens[i] = self._preprocess_pos_tagging(tokens[i])
 
         return tokens
-    
+
+    def _get_ngram_overlap(self, tokens):
+        # TODO
+        return [1, 2, 3]
+
+    # vraca feature za jedan ili vise primjera (primjer je lista sa 2 recenice)
     def get_features(self, X):
-        # TODO - pozvati za obje recenice preprocess i zatim potrebne funkcije za izvaditi sve numericke znacajke
-        # jedan primjer je lista od 2 recenice (stringa)
-        # ako je X jedan primjer vratiti listu znacajki za njega
-        # ako je X lista primjera vratiti listu znacajki za svaki primjer
-        return
-    
+        X = np.array(X)
+        if X.ndim == 1:
+            X = np.array([X])
+
+        X_features = []
+        for x in X:
+            features = []
+            tokens = self.preprocess(x)
+            features.extend(self._get_ngram_overlap(tokens))
+            # TODO - pozvati ostale funkcije za feature koji postoje i dodati ih u features listu (kao linija gore)
+            X_features.append(features)
+
+        return X_features
+
     def train(self, X, y, k = 5):
         # TODO - X, y training setovi, radi se k-unakrsna provjera za optimalne hiperparametre
         # parametre i pravi objekt modela ce se pamtiti u varijablama klase
