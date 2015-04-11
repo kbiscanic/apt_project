@@ -58,3 +58,6 @@ target/
 
 # Idea
 .idea/
+
+# WordNet
+data/nltk/corpora/wordnet/
