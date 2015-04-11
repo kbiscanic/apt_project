@@ -2,6 +2,7 @@ import nltk
 import re
 import numpy as np
 
+
 class Model:
     _NLTK_DATA_PATH = '../data/nltk'
 
@@ -48,8 +49,12 @@ class Model:
         stopwords.extend(['.', ',', '!', '?', '\'', '"', '\'\'', '""', '``'])
         return [x for x in tokens if x not in stopwords]
 
+    def _preprocess_lemmatization(self, tokens):
+        # TODO
+        return tokens
+
     # vraca listu koja sadrzi 2 liste preprocesiranih tokena za 1 primjer (2 zadane recenice)
-    def preprocess(self, X):
+    def preprocess(self, X, stopwords=False, lemmatization=False):
         str = ["", ""]
         tokens = [[], []]
 
@@ -63,8 +68,11 @@ class Model:
             tokens[i] = self._preprocess_compounds(tokens[i], tokens[1 - i])
 
         for i in range(0, 2):
-            tokens[i] = self._preprocess_stopwords(tokens[i])
             tokens[i] = self._preprocess_pos_tagging(tokens[i])
+            if stopwords:
+                tokens[i] = self._preprocess_stopwords(tokens[i])
+            if lemmatization:
+                tokens[i] = self._preprocess_lemmatization(tokens[i])
 
         return tokens
 
@@ -81,18 +89,23 @@ class Model:
         X_features = []
         for x in X:
             features = []
-            tokens = self.preprocess(x)
+            all_tokens = self.preprocess(x)
+            tokens = self._preprocess_stopwords(all_tokens)
+            lemma_tokens = self._preprocess_lemmatization(tokens)
+
             features.extend(self._get_ngram_overlap(tokens))
+            features.extend(self._get_ngram_overlap(lemma_tokens))
             # TODO - pozvati ostale funkcije za feature koji postoje i dodati ih u features listu (kao linija gore)
+
             X_features.append(features)
 
         return X_features
 
-    def train(self, X, y, k = 5):
+    def train(self, X, y, k=5):
         # TODO - X, y training setovi, radi se k-unakrsna provjera za optimalne hiperparametre
         # parametre i pravi objekt modela ce se pamtiti u varijablama klase
         return
-    
+
     def predict(self, X):
         # vraca rezultat za 1 primjer ili listu primjera
         return
