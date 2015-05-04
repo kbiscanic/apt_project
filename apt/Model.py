@@ -2,10 +2,18 @@
 import nltk
 import re
 import numpy as np
-import libsvm.python.svm
+import sklearn
+import sklearn.cross_validation
+from libsvm.python.svmutil import *
 
 class Model:
     _NLTK_DATA_PATH = '../data/nltk'
+
+    # model i parametri koji su koristeni pri ucenju
+    _model = None
+    _param_C = None
+    _param_gamma = None
+    _param_epsilon = None
 
     def __init__(self):
         if self._NLTK_DATA_PATH not in nltk.data.path:
@@ -134,16 +142,81 @@ class Model:
         return X_features
 
     # obavlja treniranje modela sa zadanim parametrima
-    def train(self, X, y):
-        return
+    def train(self, X, y, preprocess_X=True, C=1, gamma=1, epsilon=0.1):
+        if preprocess_X:
+            X = self.get_features(X)
+        self._model = svm_train(y, X, '-s 3 -t 2 -c ' + str(C) + ' -g ' + str(gamma) + ' -p ' + str(epsilon))
+        self._param_C = C
+        self._param_gamma = gamma
+        self._param_epsilon = epsilon
 
-    # obavlja treniranje modela sa k-unakrsnom provjerom od k preklopa
-    def train_k_fold(self, X, y, k=5):
-        # TODO - X, y training setovi, radi se k-unakrsna provjera za optimalne hiperparametre
-        # parametre i pravi objekt modela ce se pamtiti u varijablama klase
-        return
+    # vraca parametar C naucenog modela
+    def get_param_C(self):
+        return self._param_C
 
-    def predict(self, X):
-        # vraca rezultat za 1 primjer ili listu primjera
-        return
-    
+    # vraca parametar gamma naucenog modela
+    def get_param_gamma(self):
+        return self._param_gamma
+
+    # vraca parametar epsilon naucenog modela
+    def get_param_epsilon(self):
+        return self._param_epsilon
+
+    # obavlja treniranje modela sa k-unakrsnom provjerom od k preklopa na zadanim vrijednostima za C, gamma i epsilon
+    def train_k_fold(self, X, y, C_set, gamma_set, epsilon_set, k=5):
+        X = np.array(self.get_features(X))
+        y = np.array(y)
+
+        best_mse_sum = None
+        best_C = None
+        best_gamma = None
+        best_epsilon = None
+
+        # napravi k preklopa u obliku lista (jer libsvm trazi liste, a ne np.array)
+        kf = sklearn.cross_validation.KFold(n=len(X), n_folds=k, shuffle=True)
+        X_train_folds = []
+        X_validate_folds = []
+        y_train_folds = []
+        y_validate_folds = []
+        for train_index, validate_index in kf:
+            X_train, X_validate = X[train_index], X[validate_index]
+            y_train, y_validate = y[train_index], y[validate_index]
+            X_train_folds.append(X_train.tolist())
+            X_validate_folds.append(X_validate.tolist())
+            y_train_folds.append(y_train.tolist())
+            y_validate_folds.append(y_validate.tolist())
+
+        for C in C_set:
+            for gamma in gamma_set:
+                for epsilon in epsilon_set:
+                    # za svaki parametar prodji k preklopa
+                    mse_sum = 0
+                    for i in range(0, k):
+                        self.train(X_train_folds[i], y_train_folds[i], False, C, gamma, epsilon)
+                        _, p_acc = self.predict(X_validate_folds[i], False, y_validate_folds[i])
+                        mse_sum += p_acc[0]
+
+                    # da li su najbolji parametri? (moze se promatrati suma umjesto avg jer je uvijek k preklopa)
+                    if best_mse_sum == None or mse_sum < best_mse_sum:
+                        best_mse_sum = mse_sum
+                        best_C = C
+                        best_gamma = gamma
+                        best_epsilon = epsilon
+
+        # nauci model na najboljim parametrima i cijelom skupu
+        self.train(X.tolist(), y.tolist(), False, best_C, best_gamma, best_epsilon)
+
+    # vraca predikciju za 1 primjer ili listu primjera
+    # ako se zada varijabla y koja predstavlja tocnu klasifikaciju, onda se vracaju i dodatni podaci o preciznosti
+    def predict(self, X, preprocess_X=True, y=None):
+        if preprocess_X:
+            X = self.get_features(X)
+        if y == None:
+            y_true = [0] * len(X)
+        else:
+            y_true = y
+        p_labels, p_acc, p_vals = svm_predict(y_true, X, self._model)
+        if y == None:
+            return p_labels
+        else:
+            return p_labels, p_acc

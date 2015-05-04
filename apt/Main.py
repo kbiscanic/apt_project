@@ -31,7 +31,6 @@ def load_data_X(file):
         X.append(sentences)
     return X
 
-
 # ucitava izlaze primjera iz zadane datoteke
 def load_data_y(file):
     y = []
@@ -39,10 +38,13 @@ def load_data_y(file):
         y.append(float(line))
     return y
 
-
 X_train = load_data_X('../data/train/STS.input.MSRpar.txt')
 y_train = load_data_y('../data/train/STS.gs.MSRpar.txt')
 X_test = load_data_X('../data/test-gold/STS.input.MSRpar.txt')
 y_test = load_data_y('../data/test-gold/STS.gs.MSRpar.txt')
 # model = Model()
-model.train(X_train, y_train)
+# model.train(X_train, y_train)
+# model.train_k_fold(X_train, y_train, [1, 2, 3], [1, 2, 3], [0.1, 0.2, 0.3], 3)
+# print "Tocni: ", y_train
+# ove dodatne debug poruke ispisuje sam library, a MSE nije tocan (jer se nije predao pravi y u predict, ali se moze)
+# print "Dobiveni: ", model.predict(X_train)

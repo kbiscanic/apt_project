@@ -25,4 +25,4 @@ STEPS
 - normalized differences A,C --> KARLO
 - shallow NERC --> KIKI
 - numbers overlap --> KARLO
-- model learning --> JAGAR
++ model learning --> JAGAR
