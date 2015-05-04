@@ -32,5 +32,8 @@ STEPS
 - numbers overlap --> KARLO
 - model learning --> JAGAR
 
+NOTES
+misspelled words
+
 CHECKPOINT
 pitati je li mozemo koristiti njihov file sa frekvencijom rijeci
