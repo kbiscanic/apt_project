@@ -38,10 +38,7 @@ def read_data(filename):
 
 
 def calc_ic(word, data):
-    if word in data[1]:
-        return log(data[0], data[1][word])
-    else:
-        return 0
+    return log(data[0], data[1].get(word, 0.1))  # TODO koji broj ima smisla
 
 
 def calc_wwc(words1, words2, data):
@@ -61,4 +58,9 @@ def calc_wwc(words1, words2, data):
 
 def calc_wwo(words1, words2):
     data = read_data('data/word-frequencies.txt')
-    return 2 / (1 / calc_wwc(words1, words2, data) + 1 / calc_wwc(words2, words1, data))
+    wwc1 = calc_wwc(words1, words2, data)
+    wwc2 = calc_wwc(words2, words1, data)
+    if wwc1 + wwc2 == 0:
+        return 0
+    else:
+        return 2 * wwc1 * wwc2 / (wwc1 + wwc2)

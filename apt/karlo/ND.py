@@ -3,5 +3,5 @@
 __author__ = 'karlo'
 
 
-def nda():
+def calc_nda(words1, words2):
     pass
