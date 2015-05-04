@@ -10,9 +10,14 @@ with human similarity judgements.
 ARTICLES
 http://aclweb.org/anthology/S/S12/S12-1051.pdf
 http://www.aclweb.org/anthology/S/S12/S12-1060.pdf
+http://aclweb.org/anthology/P/P12/P12-3029.pdf
 
 DATA
 http://www.cs.york.ac.uk/semeval-2012/task6/index.php?id=data
+http://storage.googleapis.com/books/ngrams/books/datasetsv2.html
+
+IMPLEMENTATION
+http://takelab.fer.hr/sts/
 
 STEPS
 + initial arrangement
