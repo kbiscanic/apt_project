@@ -31,3 +31,6 @@ STEPS
 - shallow NERC --> KIKI
 - numbers overlap --> KARLO
 - model learning --> JAGAR
+
+CHECKPOINT
+pitati je li mozemo koristiti njihov file sa frekvencijom rijeci
