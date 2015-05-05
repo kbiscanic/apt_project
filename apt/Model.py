@@ -10,6 +10,7 @@ from libsvm.python.svmutil import *
 from features.karlo.WWO import calc_wwo
 from features.karlo.ND import calc_nda, calc_ndc
 from features.karlo.NO import calc_no
+from features.jagar.ngram_overlap import calc_ngram_overlap
 
 
 class Model:
@@ -101,16 +102,16 @@ class Model:
         str = ["", ""]
         tokens = [[], []]
 
-        for i in range(0, 2):
+        for i in xrange(0, 2):
             str[i] = self._preprocess_sentence(X[i])
             str[i] = self._preprocess_currency(str[i])
             tokens[i] = self._preprocess_tokenize(str[i])
             tokens[i] = self._preprocess_token_replacement(tokens[i])
 
-        for i in range(0, 2):
+        for i in xrange(0, 2):
             tokens[i] = self._preprocess_compounds(tokens[i], tokens[1 - i])
 
-        for i in range(0, 2):
+        for i in xrange(0, 2):
             tokens[i] = self._preprocess_pos_tagging(tokens[i])
             if stopwords:
                 tokens[i] = self._preprocess_stopwords(tokens[i])
@@ -118,11 +119,6 @@ class Model:
                 tokens[i] = self._preprocess_lemmatization(tokens[i])
 
         return tokens
-
-    # vraca ngram overlap znacajke za 2 liste tokena
-    def _get_ngram_overlap(self, tokens):
-        # TODO
-        return [1, 2, 3]
 
     # vraca znacajke za jedan ili vise primjera (1 primjer je lista sa 2 recenice)
     def get_features(self, X):
@@ -136,14 +132,21 @@ class Model:
             all_tokens = self.preprocess(x)
             tokens = [self._preprocess_stopwords(all_tokens[0]), self._preprocess_stopwords(all_tokens[1])]
             lemma_tokens = [self._preprocess_lemmatization(tokens[0]), self._preprocess_lemmatization(tokens[1])]
+            all_words = [[x[0] for x in all_tokens[0]], [x[1] for x in all_tokens[1]]]
+            words = [[x[0] for x in tokens[0]], [x[0] for x in tokens[1]]]
+            lemma_words = [[x[0] for x in lemma_tokens[0]], [x[0] for x in lemma_tokens[1]]]
 
-            features.extend(self._get_ngram_overlap(tokens))
-            features.extend(self._get_ngram_overlap(lemma_tokens))
-            features.extend(calc_wwo(all_tokens))
-            features.extend(calc_wwo(lemma_tokens))
-            features.extend(calc_nda(tokens))
-            features.extend(calc_ndc(all_tokens))
-            features.extend(calc_no(all_tokens))
+            features.append(calc_ngram_overlap(words, 1))
+            features.append(calc_ngram_overlap(words, 2))
+            features.append(calc_ngram_overlap(words, 3))
+            features.append(calc_ngram_overlap(lemma_words, 1))
+            features.append(calc_ngram_overlap(lemma_words, 2))
+            features.append(calc_ngram_overlap(lemma_words, 3))
+            features.extend(calc_wwo(all_words))
+            features.extend(calc_wwo(lemma_words))
+            features.extend(calc_nda(words))
+            features.extend(calc_ndc(all_words))
+            features.extend(calc_no(all_words))
             # TODO - pozvati ostale funkcije za feature koji postoje i dodati ih u features listu (kao linija gore)
             # TODO - ovisno o vrsti featurea, negdje ce se koristiti all_tokens, negdje tokens a negdje lemma_tokens
             # TODO - najbolje pogledati u sourcu onom
@@ -202,7 +205,7 @@ class Model:
                 for epsilon in epsilon_set:
                     # za svaki parametar prodji k preklopa
                     mse_sum = 0
-                    for i in range(0, k):
+                    for i in xrange(0, k):
                         self.train(X_train_folds[i], y_train_folds[i], False, C, gamma, epsilon)
                         _, p_acc = self.predict(X_validate_folds[i], False, y_validate_folds[i])
                         mse_sum += p_acc[0]

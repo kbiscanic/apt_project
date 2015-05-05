@@ -23,7 +23,7 @@ STEPS
 + initial arrangement
 + model --> JAGAR
 + preprocessing --> JAGAR
-- ngram overlap --> JAGAR
++ ngram overlap --> JAGAR
 - wordnet-aug overlap --> KIKI
 + weighted word overlap --> KARLO
 - vector-space similarity --> KIKI

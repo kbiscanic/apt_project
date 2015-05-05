@@ -59,9 +59,9 @@ def calc_wwc(words1, words2):
     return sum1 / sum2
 
 
-def calc_wwo(all_tokens):
-    words1 = [x[0] for x in all_tokens[0]]
-    words2 = [x[0] for x in all_tokens[1]]
+def calc_wwo(all_words):
+    words1 = all_words[0]
+    words2 = all_words[1]
     wwc1 = calc_wwc(words1, words2)
     wwc2 = calc_wwc(words2, words1)
     if wwc1 + wwc2 == 0:

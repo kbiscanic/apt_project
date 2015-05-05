@@ -5,9 +5,9 @@ __author__ = 'karlo'
 from math import log
 
 
-def calc_no(all_tokens):
-    words1 = [x[0] for x in all_tokens[0]]
-    words2 = [x[0] for x in all_tokens[1]]
+def calc_no(all_words):
+    words1 = all_words[0]
+    words2 = all_words[1]
     extract_numbers = lambda words: [w for w in words if w.isdigit() or w[0] == '-' and w[1:].isdigit()]
     n1 = set(extract_numbers(words1))  # set of numbers in the first sentence
     n2 = set(extract_numbers(words2))  # set of numbers in the second sentence
