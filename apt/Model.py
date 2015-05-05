@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
-import nltk
 import re
 import numpy as np
+
+import nltk
+
 import sklearn
 import sklearn.cross_validation
 from libsvm.python.svmutil import *
+from features.karlo.WWO import calc_wwo
+from features.karlo.ND import calc_nda, calc_ndc
+from features.karlo.NO import calc_no
+
 
 class Model:
     _NLTK_DATA_PATH = '../data/nltk'
@@ -133,6 +139,11 @@ class Model:
 
             features.extend(self._get_ngram_overlap(tokens))
             features.extend(self._get_ngram_overlap(lemma_tokens))
+            features.extend(calc_wwo(all_tokens))
+            features.extend(calc_wwo(lemma_tokens))
+            features.extend(calc_nda(tokens))
+            features.extend(calc_ndc(all_tokens))
+            features.extend(calc_no(all_tokens))
             # TODO - pozvati ostale funkcije za feature koji postoje i dodati ih u features listu (kao linija gore)
             # TODO - ovisno o vrsti featurea, negdje ce se koristiti all_tokens, negdje tokens a negdje lemma_tokens
             # TODO - najbolje pogledati u sourcu onom
