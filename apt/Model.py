@@ -27,11 +27,14 @@ class Model:
             nltk.data.path.append(self._NLTK_DATA_PATH)
 
     # obavlja pocetno preprocesiranje recenice - prebacivanje u lowercase, micanje i zamjena nekih znakova
-    def _preprocess_sentence(self, sentence):
+    def _preprocess_sentence(self, sentence, toLower=True):
         replace = {u'’': u'\'', u'``': u'"', u'\'\'': u'"', u'—': u'-', u'´': u'\''}
         for key in replace:
             sentence = sentence.replace(key, replace[key])
-        return re.sub(r"[\\\/\-()<>:#\[\]\{\}]", "", sentence.strip().lower())
+        str = re.sub(r"[\\\/\-()<>:#\[\]\{\}]", "", sentence.strip())
+        if toLower:
+            str = str.lower();
+        return str
 
     # obavlja preprocesiranje novcanih vrijednosti u recenici
     def _preprocess_currency(self, sentence):
@@ -44,11 +47,12 @@ class Model:
     # obavlje preprocesiranje tokena - zamjenjuje odredjene tokene
     def _preprocess_token_replacement(self, tokens):
         replace = {u'\'m': u'am', u'n\'t': u'not', u'\'re': u'are'}
-        return [replace.get(x, x) for x in tokens]
+        return [replace.get(x.lower(), x) for x in tokens]
 
     # obavlja preprocesiranje compound tokena - ako se 2 susjedna tokena iz liste tokens1 pojavljuju zajedno u tokens2
     # onda se zamjenjuju sa spojenim tokenom
     def _preprocess_compounds(self, tokens1, tokens2):
+        tokens2_lower = [x.lower() for x in tokens2]
         new_tokens1 = []
         i = 0
         while i < len(tokens1):
@@ -57,7 +61,7 @@ class Model:
                 break
             else:
                 compound = tokens1[i] + tokens1[i + 1]
-                if compound in tokens2:
+                if compound.lower() in tokens2_lower:
                     new_tokens1.append(compound)
                     i += 2
                 else:
@@ -73,7 +77,7 @@ class Model:
     def _preprocess_stopwords(self, tokens):
         stopwords = nltk.corpus.stopwords.words('english')
         stopwords.extend([u'.', u',', u'!', u'?', u'\'', u'"', u'\'\'', u'""', u'``'])
-        return [x for x in tokens if x[0] not in stopwords]
+        return [x for x in tokens if x[0].lower() not in stopwords]
 
     # obavlja lematizaciju nad listom tokena
     def _preprocess_lemmatization(self, tokens):
@@ -98,12 +102,12 @@ class Model:
         return lemma_tokens
 
     # vraca listu koja sadrzi 2 liste preprocesiranih tokena za 1 primjer (primjer je lista od 2 recenice)
-    def preprocess(self, X, stopwords=False, lemmatization=False):
+    def preprocess(self, X, toLower=True, stopwords=False, lemmatization=False):
         str = ["", ""]
         tokens = [[], []]
 
         for i in xrange(0, 2):
-            str[i] = self._preprocess_sentence(X[i])
+            str[i] = self._preprocess_sentence(X[i], toLower)
             str[i] = self._preprocess_currency(str[i])
             tokens[i] = self._preprocess_tokenize(str[i])
             tokens[i] = self._preprocess_token_replacement(tokens[i])
@@ -129,6 +133,12 @@ class Model:
         X_features = []
         for x in X:
             features = []
+
+            # originalni case podaci
+            all_tokens_org_case = self.preprocess(x, False)
+            all_words_org_case = [[x[0] for x in all_tokens_org_case[0]], [x[1] for x in all_tokens_org_case[1]]]
+
+            # lowercase podaci
             all_tokens = self.preprocess(x)
             tokens = [self._preprocess_stopwords(all_tokens[0]), self._preprocess_stopwords(all_tokens[1])]
             lemma_tokens = [self._preprocess_lemmatization(tokens[0]), self._preprocess_lemmatization(tokens[1])]
