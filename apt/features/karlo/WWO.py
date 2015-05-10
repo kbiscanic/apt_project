@@ -56,6 +56,9 @@ def calc_wwc(words1, words2):
     for w in w2:
         sum2 += calc_ic(w)
 
+    if sum2 == 0:
+        return 0
+
     return sum1 / sum2
 
 
