@@ -136,13 +136,13 @@ class Model:
 
             # originalni case podaci
             all_tokens_org_case = self.preprocess(x, False)
-            all_words_org_case = [[x[0] for x in all_tokens_org_case[0]], [x[1] for x in all_tokens_org_case[1]]]
+            all_words_org_case = [[x[0] for x in all_tokens_org_case[0]], [x[0] for x in all_tokens_org_case[1]]]
 
             # lowercase podaci
             all_tokens = self.preprocess(x)
             tokens = [self._preprocess_stopwords(all_tokens[0]), self._preprocess_stopwords(all_tokens[1])]
             lemma_tokens = [self._preprocess_lemmatization(tokens[0]), self._preprocess_lemmatization(tokens[1])]
-            all_words = [[x[0] for x in all_tokens[0]], [x[1] for x in all_tokens[1]]]
+            all_words = [[x[0] for x in all_tokens[0]], [x[0] for x in all_tokens[1]]]
             words = [[x[0] for x in tokens[0]], [x[0] for x in tokens[1]]]
             lemma_words = [[x[0] for x in lemma_tokens[0]], [x[0] for x in lemma_tokens[1]]]
 
