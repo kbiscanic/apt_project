@@ -6,10 +6,14 @@ import nltk
 
 import sklearn
 import sklearn.cross_validation
-from libsvm.python.svmutil import *
+from apt.libsvm.python.svmutil import *
 from features.karlo.WWO import calc_wwo
 from features.karlo.ND import calc_nda, calc_ndc
 from features.karlo.NO import calc_no
+from features.kbiscanic.wordnet_aug_overlap import wordnet_aug_overlap_words
+from features.kbiscanic.vector_space_similarity import vector_space_similarity_words
+from features.kbiscanic.shallow_nerc import named_overlap_words
+from features.kbiscanic.shallow_nerc import stocks_overlap_words
 from features.jagar.ngram_overlap import calc_ngram_overlap
 
 
@@ -146,14 +150,25 @@ class Model:
             words = [[x[0] for x in tokens[0]], [x[0] for x in tokens[1]]]
             lemma_words = [[x[0] for x in lemma_tokens[0]], [x[0] for x in lemma_tokens[1]]]
 
+            no = named_overlap_words(all_tokens_org_case)
+            features.append(no[0])
+            features.append(no[1])
+
+            so = stocks_overlap_words(all_tokens_org_case)
+            features.append(so[0])
+            features.append(so[1])
+
             features.append(calc_ngram_overlap(words, 1))
             features.append(calc_ngram_overlap(words, 2))
             features.append(calc_ngram_overlap(words, 3))
             features.append(calc_ngram_overlap(lemma_words, 1))
             features.append(calc_ngram_overlap(lemma_words, 2))
             features.append(calc_ngram_overlap(lemma_words, 3))
+            features.append(wordnet_aug_overlap_words(lemma_words))
             features.extend(calc_wwo(all_words))
             features.extend(calc_wwo(lemma_words))
+            features.append(vector_space_similarity_words(lemma_words, False))
+            features.append(vector_space_similarity_words(lemma_words, True))
             features.extend(calc_nda(words))
             features.extend(calc_ndc(all_words))
             features.extend(calc_no(all_words))
