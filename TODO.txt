@@ -37,3 +37,4 @@ misspelled words
 
 CHECKPOINT
 pitati je li mozemo koristiti njihov file sa frekvencijom rijeci
+mozemo li prebaciti znakove u ascii
