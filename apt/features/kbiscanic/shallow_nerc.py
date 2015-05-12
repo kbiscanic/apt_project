@@ -6,13 +6,21 @@ import math
 def _len_compress(l):
     return math.log(1. + l)
 
+def _is_upper(x):
+    try:
+        return x.decode('utf8').isupper()
+    except UnicodeEncodeError:
+        return False
 
 def _is_stock(x):
-    return len(x) > 1 and x[0] == u'.' and x[1:].decode('utf8').isupper()
+    try:
+        return len(x) > 1 and x[0] == u'.' and x[1:].decode('utf8').isupper()
+    except UnicodeEncodeError:
+        return False
 
 
 def _capitalized(s):
-    return set(x[0] for x in s if len(x[0]) > 1 and x[0][0].decode('utf8').isupper() and x[0][-1] != u'.')
+    return set(x[0] for x in s if len(x[0]) > 1 and x[0][0]._isupper() and x[0][-1] != u'.')
 
 
 def _stocks(s):
