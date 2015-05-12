@@ -1,0 +1,7 @@
+C: 16384
+epsilon: 0.6
+gamma: 0.0009765625
+
+pearson_train = 0.73014
+pearson_test = 0.68279
+
