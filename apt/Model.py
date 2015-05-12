@@ -206,7 +206,7 @@ class Model:
         X = np.array(self.get_features(X))
         y = np.array(y)
 
-        best_mse_sum = None
+        best_score_sum = None
         best_C = None
         best_gamma = None
         best_epsilon = None
@@ -231,18 +231,19 @@ class Model:
             for gamma in gamma_set:
                 for epsilon in epsilon_set:
                     # za svaki parametar prodji k preklopa
-                    mse_sum = 0
+                    score_sum = 0
                     for i in xrange(0, k):
                         self.train(X_train_folds[i], y_train_folds[i], False, C, gamma, epsilon)
-                        _, p_acc = self.predict(X_validate_folds[i], False, y_validate_folds[i])
-                        mse_sum += p_acc[0]
+                        predicted_y = self.predict(X_validate_folds[i], False)
+                        score_sum += np.corrcoef(y_validate_folds[i], predicted_y)[0, 1]
 
                     cnt += 1
                     if cnt % 500 == 0:
                         print cnt
+
                     # da li su najbolji parametri? (moze se promatrati suma umjesto avg jer je uvijek k preklopa)
-                    if best_mse_sum == None or mse_sum < best_mse_sum:
-                        best_mse_sum = mse_sum
+                    if best_score_sum is None or score_sum > best_score_sum:
+                        best_score_sum = score_sum
                         best_C = C
                         best_gamma = gamma
                         best_epsilon = epsilon
@@ -252,15 +253,9 @@ class Model:
 
     # vraca predikciju za 1 primjer ili listu primjera
     # ako se zada varijabla y koja predstavlja tocnu klasifikaciju, onda se vracaju i dodatni podaci o preciznosti
-    def predict(self, X, preprocess_X=True, y=None):
+    def predict(self, X, preprocess_X=True):
         if preprocess_X:
             X = self.get_features(X)
-        if y == None:
-            y_true = [0] * len(X)
-        else:
-            y_true = y
+        y_true = [0] * len(X)
         p_labels, p_acc, p_vals = svm_predict(y_true, X, self._model)
-        if y == None:
-            return p_labels
-        else:
-            return p_labels, p_acc
+        return p_labels
