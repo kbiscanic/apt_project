@@ -20,7 +20,7 @@ def _is_stock(x):
 
 
 def _capitalized(s):
-    return set(x[0] for x in s if len(x[0]) > 1 and _isupper(x[0][0]) and x[0][-1] != u'.')
+    return set(x[0] for x in s if len(x[0]) > 1 and _is_upper(x[0][0]) and x[0][-1] != u'.')
 
 
 def _stocks(s):
