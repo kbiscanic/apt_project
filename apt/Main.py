@@ -51,10 +51,16 @@ def write_output(file, output):
             r = x
         f.write(str(r) + '\n')
 
-X_train = load_data_X('../data/train/STS.input.MSRpar.txt')
-y_train = load_data_y('../data/train/STS.gs.MSRpar.txt')
-X_test = load_data_X('../data/test-gold/STS.input.MSRpar.txt')
-y_test = load_data_y('../data/test-gold/STS.gs.MSRpar.txt')
+# X_train = load_data_X('../data/train/STS.input.MSRpar.txt')
+# y_train = load_data_y('../data/train/STS.gs.MSRpar.txt')
+# X_test = load_data_X('../data/test-gold/STS.input.MSRpar.txt')
+# y_test = load_data_y('../data/test-gold/STS.gs.MSRpar.txt')
+
+X_train = load_data_X('../data/train/STS.input.MSRvid.txt')
+y_train = load_data_y('../data/train/STS.gs.MSRvid.txt')
+X_test = load_data_X('../data/test-gold/STS.input.MSRvid.txt')
+y_test = load_data_y('../data/test-gold/STS.gs.MSRvid.txt')
+
 model = Model()
 # model.train(X_train, y_train)
 C_set = [2**x for x in range(-5, 15 + 1)]
@@ -65,12 +71,12 @@ print "Tocni: ", y_train
 # ove dodatne debug poruke ispisuje sam library, a MSE nije tocan (jer se nije predao pravi y u predict, ali se moze)
 predicted = model.predict(X_train)
 print "Dobiveni: ", predicted
-write_output("MSRpar_train.out", predicted)
+write_output("MSRvid_train.out", predicted)
 
 print "Tocni test: ", y_test
 predicted_test = model.predict(X_test)
 print "Dobiveni test: ", predicted_test
-write_output("MSRpar_test.out", predicted_test)
+write_output("MSRvid_test.out", predicted_test)
 print 'C:', model.get_param_C()
 print 'epsilon:', model.get_param_epsilon()
 print 'gamma:', model.get_param_gamma()
