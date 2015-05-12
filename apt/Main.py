@@ -55,12 +55,22 @@ X_train = load_data_X('../data/train/STS.input.MSRpar.txt')
 y_train = load_data_y('../data/train/STS.gs.MSRpar.txt')
 X_test = load_data_X('../data/test-gold/STS.input.MSRpar.txt')
 y_test = load_data_y('../data/test-gold/STS.gs.MSRpar.txt')
-# model = Model()
+model = Model()
 # model.train(X_train, y_train)
-# C_set = [2**x for x in range(-5, 15 + 1)]
-# gamma_set = [2**x for x in range(-15, 3 + 1)]
-# epsilon_set = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
-# model.train_k_fold(X_train, y_train, C_set, gamma_set, epsilon_set, 3)
-# print "Tocni: ", y_train
+C_set = [2**x for x in range(-5, 15 + 1)]
+gamma_set = [2**x for x in range(-15, 3 + 1)]
+epsilon_set = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+model.train_k_fold(X_train, y_train, C_set, gamma_set, epsilon_set, 3)
+print "Tocni: ", y_train
 # ove dodatne debug poruke ispisuje sam library, a MSE nije tocan (jer se nije predao pravi y u predict, ali se moze)
-# print "Dobiveni: ", model.predict(X_train)
+predicted = model.predict(X_train)
+print "Dobiveni: ", predicted
+write_output("MSRpar_train.out", predicted)
+
+print "Tocni test: ", y_test
+predicted_test = model.predict(X_test)
+print "Dobiveni test: ", predicted_test
+write_output("MSRpar_test.out", predicted_test)
+print 'C:', model.get_param_C()
+print 'epsilon:', model.get_param_epsilon()
+print 'gamma:', model.get_param_gamma()

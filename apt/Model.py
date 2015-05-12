@@ -225,6 +225,8 @@ class Model:
             y_train_folds.append(y_train.tolist())
             y_validate_folds.append(y_validate.tolist())
 
+
+        cnt = 0
         for C in C_set:
             for gamma in gamma_set:
                 for epsilon in epsilon_set:
@@ -235,6 +237,9 @@ class Model:
                         _, p_acc = self.predict(X_validate_folds[i], False, y_validate_folds[i])
                         mse_sum += p_acc[0]
 
+                    cnt += 1
+                    if cnt % 500 == 0:
+                        print cnt
                     # da li su najbolji parametri? (moze se promatrati suma umjesto avg jer je uvijek k preklopa)
                     if best_mse_sum == None or mse_sum < best_mse_sum:
                         best_mse_sum = mse_sum
