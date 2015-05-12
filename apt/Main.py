@@ -85,7 +85,7 @@ def test(X_train_file, y_train_file, X_test_file, y_test_file, train_out_file, t
 #     '../data/test-gold/STS.input.MSRvid.txt', '../data/test-gold/STS.gs.MSRvid.txt',
 #     'MSRvid_train.out', 'MSRvid_test.out')
 
-test('../data/train/STS.input.SMTeuroparl.txt', '../data/train/STS.gs.SMTeuroparl.txt',
-     '../data/test-gold/STS.input.SMTeuroparl.txt', '../data/test-gold/STS.gs.SMTeuroparl.txt',
-     'SMTeuroparl_train.out', 'SMTeuroparl_test.out')
+# test('../data/train/STS.input.SMTeuroparl.txt', '../data/train/STS.gs.SMTeuroparl.txt',
+# '../data/test-gold/STS.input.SMTeuroparl.txt', '../data/test-gold/STS.gs.SMTeuroparl.txt',
+#     'SMTeuroparl_train.out', 'SMTeuroparl_test.out')
 
