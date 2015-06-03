@@ -31,7 +31,7 @@ STEPS
 + shallow NERC --> KIKI
 + numbers overlap --> KARLO
 + model learning --> JAGAR
-- word2vec --> KARLO
++ word2vec --> KARLO
 
 NOTES
 misspelled words
