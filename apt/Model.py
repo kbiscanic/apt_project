@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import re
+
 import numpy as np
-
 import nltk
-
 import sklearn
 import sklearn.cross_validation
+
 from apt.libsvm.python.svmutil import *
 from features.karlo.WWO import calc_wwo
 from features.karlo.ND import calc_nda, calc_ndc
@@ -15,6 +15,7 @@ from features.kbiscanic.vector_space_similarity import vector_space_similarity_w
 from features.kbiscanic.shallow_nerc import named_overlap_words
 from features.kbiscanic.shallow_nerc import stocks_overlap_words
 from features.jagar.ngram_overlap import calc_ngram_overlap
+from features.karlo.word2vec import calc_w2v_similarity
 
 
 class Model:
@@ -172,6 +173,7 @@ class Model:
             features.extend(calc_nda(words))
             features.extend(calc_ndc(all_words))
             features.extend(calc_no(all_words))
+            features.extend(calc_w2v_similarity(lemma_words))
             # TODO - pozvati ostale funkcije za feature koji postoje i dodati ih u features listu (kao linija gore)
             # TODO - ovisno o vrsti featurea, negdje ce se koristiti all_tokens, negdje tokens a negdje lemma_tokens
             # TODO - najbolje pogledati u sourcu onom
