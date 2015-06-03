@@ -1,0 +1,155 @@
+A pankda is eating bamboo.
+A panda bear is eating some bamboo.
+Tocno: 4.2
+Dobiveno: 1.98742776399
+Razlika: 2.21257223601
+A boy is checking a calender.
+A boy is looking at a calendar.
+Tocno: 3.8
+Dobiveno: 1.34735069147
+Razlika: 2.45264930853
+A monkey is swinging from limb to limb.
+A monkey is swinging from tree to tree.
+Tocno: 3.4
+Dobiveno: 0.90478399735
+Razlika: 2.49521600265
+The people got off the train.
+The people got off the train at the station.
+Tocno: 4.0
+Dobiveno: 1.25084628956
+Razlika: 2.74915371044
+A band is performing on a stage.
+A band is playing onstage.
+Tocno: 5.0
+Dobiveno: 2.76445347077
+Razlika: 2.23554652923
+Two women are wrestling.
+Two women are wrestling on the floor.
+Tocno: 4.0
+Dobiveno: 1.38081386499
+Razlika: 2.61918613501
+A kangroo is eating something.
+A kangaroo is eating.
+Tocno: 4.8
+Dobiveno: 0.299048910693
+Razlika: 4.50095108931
+A man is talking on a phone.
+A man is singing to a woman.
+Tocno: 0.25
+Dobiveno: 2.42430586342
+Razlika: 2.17430586342
+A man is playing a guitar.
+A guy is playing an instrument.
+Tocno: 3.8
+Dobiveno: 1.69712951558
+Razlika: 2.10287048442
+People step off a train.
+A group of people get off a train.
+Tocno: 4.6
+Dobiveno: 2.45207124841
+Razlika: 2.14792875159
+A rabbit is playing with a toy rabbit.
+A bunny is playing with a stuffed bunny.
+Tocno: 4.25
+Dobiveno: 1.29831254987
+Razlika: 2.95168745013
+A plane rides on a road.
+An airplane moves along a runway.
+Tocno: 2.812
+Dobiveno: 0.765815610223
+Razlika: 2.04618438978
+A skunk is looking here and there.
+A skunk looks at the camera.
+Tocno: 2.4
+Dobiveno: 4.42503671613
+Razlika: 2.02503671613
+A badger is burrowing a hole.
+A badger is digging the earth.
+Tocno: 4.6
+Dobiveno: 2.38617683326
+Razlika: 2.21382316674
+A man is looking at a computer monitor.
+A man is using a laptop.
+Tocno: 2.75
+Dobiveno: 0.587864717041
+Razlika: 2.16213528296
+A person is cutting a meat.
+A person riding a mechanical bull
+Tocno: 0.0
+Dobiveno: 2.08144638868
+Razlika: 2.08144638868
+A woman is resting in a floating raft.
+A woman relaxes in an inner tube.
+Tocno: 3.8
+Dobiveno: 0.881148851557
+Razlika: 2.91885114844
+Animals are playing in water.
+Two men are playing ping pong.
+Tocno: 0.0
+Dobiveno: 2.02091904853
+Razlika: 2.02091904853
+A man and woman are eating at a table.
+A couple are eating a meal and talking.
+Tocno: 3.0
+Dobiveno: 0.892179224328
+Razlika: 2.10782077567
+A woman is adding pasta to a pot of water.
+A woman is making noodles.
+Tocno: 3.6
+Dobiveno: 1.42203810545
+Razlika: 2.17796189455
+The lady peeled the potatoe.
+A woman is peeling a potato.
+Tocno: 4.75
+Dobiveno: 0.86680197049
+Razlika: 3.88319802951
+A woman is cooking something.
+A woman is pouring ingredients into a frying pan.
+Tocno: 3.2
+Dobiveno: 0.814903148723
+Razlika: 2.38509685128
+A woman is swimming in the beach.
+A woman splashes around in the ocean's waves.
+Tocno: 3.2
+Dobiveno: 1.05156272962
+Razlika: 2.14843727038
+A man is carrying another man.
+A man sprays another man with water from a hose.
+Tocno: 0.8
+Dobiveno: 3.40982502151
+Razlika: 2.60982502151
+A couple are running towards the ocean.
+A man and and woman are running together, holding hands.
+Tocno: 2.818
+Dobiveno: 0.592636705407
+Razlika: 2.22536329459
+Two robots share a kiss.
+A male and female robot are kissing.
+Tocno: 3.8
+Dobiveno: 1.16964400118
+Razlika: 2.63035599882
+A woman puts cosmetics on her eyelid.
+The woman is pencilling on eye shadow.
+Tocno: 4.0
+Dobiveno: 1.40933031596
+Razlika: 2.59066968404
+The man is playing the drums.
+A man pours cleaner in his sink.
+Tocno: 0.0
+Dobiveno: 2.34974937913
+Razlika: 2.34974937913
+The lady sliced a tomatoe.
+Someone is cutting a tomato.
+Tocno: 4.0
+Dobiveno: 0.558029862943
+Razlika: 3.44197013706
+Four boys are standing in front of the burning car.
+Four young men stand still as a car explodes behind them.
+Tocno: 3.75
+Dobiveno: 1.72957898627
+Razlika: 2.02042101373
+The lady cut the tail and body of a shrimp.
+A woman is cleaning a shrimp.
+Tocno: 4.5
+Dobiveno: 2.09532956385
+Razlika: 2.40467043615

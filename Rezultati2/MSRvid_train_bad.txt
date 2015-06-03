@@ -1,0 +1,155 @@
+A cat is drinking milk.
+A kitten is drinking milk.
+Tocno: 4.0
+Dobiveno: 2.25021443524
+Razlika: 1.74978556476
+A turtle is walking.
+A tortoise is walking.
+Tocno: 4.4
+Dobiveno: 2.35978152398
+Razlika: 2.04021847602
+Someone is boiling okra in a pot.
+Someone is cooking okra in a pan.
+Tocno: 4.4
+Dobiveno: 2.64930250378
+Razlika: 1.75069749622
+A woman is cutting a leak.
+A woman is slicing a leek.
+Tocno: 4.0
+Dobiveno: 1.11338868511
+Razlika: 2.88661131489
+A woman is climbing a cliff.
+A woman is climbing a rock face.
+Tocno: 4.5
+Dobiveno: 2.55799100798
+Razlika: 1.94200899202
+A man walking down the stairs.
+A man walks down a staircase.
+Tocno: 5.0
+Dobiveno: 2.79528856205
+Razlika: 2.20471143795
+A person is combing a cat hair.
+A person is brushing a cat.
+Tocno: 4.4
+Dobiveno: 2.62442499206
+Razlika: 1.77557500794
+A woman fires a shotgun.
+A woman is shooting a gun.
+Tocno: 3.2
+Dobiveno: 1.58642044273
+Razlika: 1.61357955727
+A lion cub tries to climb a fence.
+A lion tries to climb over a wall.
+Tocno: 2.75
+Dobiveno: 4.54292044694
+Razlika: 1.79292044694
+A person is walking down a stone path.
+A man is walking down a sidewalk.
+Tocno: 3.5
+Dobiveno: 1.34389900731
+Razlika: 2.15610099269
+A animal is eating.
+The animal is hopping.
+Tocno: 0.4
+Dobiveno: 2.18392878168
+Razlika: 1.78392878168
+A cat cleans itself.
+A cat is licking itself.
+Tocno: 3.8
+Dobiveno: 1.5825398462
+Razlika: 2.2174601538
+A woman is slicing a big pepper.
+A person is cutting a green pepper.
+Tocno: 3.4
+Dobiveno: 1.79059627944
+Razlika: 1.60940372056
+A person drops a camera down an escelator.
+A man tosses a bag down an escalator.
+Tocno: 2.75
+Dobiveno: 0.112841346038
+Razlika: 2.63715865396
+A woman is slicing an onion.
+A women slicing lemons.
+Tocno: 1.4
+Dobiveno: 3.45705343988
+Razlika: 2.05705343988
+A man and woman are Bollywood dancing.
+A man an woman are dancing in the rain.
+Tocno: 1.667
+Dobiveno: 3.57559836727
+Razlika: 1.90859836727
+A woman is exercising.
+A woman lifts weights.
+Tocno: 3.4
+Dobiveno: 1.32323423471
+Razlika: 2.07676576529
+A man is preparing a hanging rope.
+A man is tying a noose.
+Tocno: 4.667
+Dobiveno: 1.11977357224
+Razlika: 3.54722642776
+A man is mowing grass.
+A guy is mowing the lawn.
+Tocno: 4.8
+Dobiveno: 2.31927811474
+Razlika: 2.48072188526
+Someone is greating a carrot.
+A woman is grating an orange food.
+Tocno: 2.5
+Dobiveno: 0.118520541936
+Razlika: 2.38147945806
+A rabbit is sniffing and pawing a stuffed rabbit.
+A live rabbit is playing with a stuffed animal bunny.
+Tocno: 4.5
+Dobiveno: 2.63229640435
+Razlika: 1.86770359565
+A woman is applying cosmetics to her face.
+A woman is putting on makeup.
+Tocno: 4.6
+Dobiveno: 1.83956260738
+Razlika: 2.76043739262
+A woman rapidly fires a handgun.
+A woman is shooting off a gun.
+Tocno: 4.4
+Dobiveno: 1.59341513136
+Razlika: 2.80658486864
+A man is carrying another man on his back.
+A man is taking pictures of ant.
+Tocno: 0.4
+Dobiveno: 2.10966259745
+Razlika: 1.70966259745
+A slow loris bites a persons fingers.
+A small animal is chewing on a finger.
+Tocno: 2.5
+Dobiveno: 0.306652731863
+Razlika: 2.19334726814
+Someone is scratching an animals belly.
+A woman is stroking a lemur.
+Tocno: 2.0
+Dobiveno: 0.155895204093
+Razlika: 1.84410479591
+A dog knocks a boy into the water twice.
+A dog pushes a toddler into a rain puddle.
+Tocno: 2.692
+Dobiveno: 0.919009268119
+Razlika: 1.77299073188
+A girl is dragged downhill by a dog.
+A dog is pulling a child down a hill.
+Tocno: 3.8
+Dobiveno: 1.46478614666
+Razlika: 2.33521385334
+The man is using a sledghammer to break the concrete block that is on the other man.
+A man breaks a slab of concrete that is lying on a prone man with a sledge hammer.
+Tocno: 5.0
+Dobiveno: 3.29459379827
+Razlika: 1.70540620173
+The doctor was helping the patient.
+Doctors are trying to revive a man.
+Tocno: 2.8
+Dobiveno: 1.00246325372
+Razlika: 1.79753674628
+A monkey is karate kicking at someone's gloved hand.
+A monkey pratices martial arts.
+Tocno: 3.5
+Dobiveno: 1.05603090523
+Razlika: 2.44396909477
