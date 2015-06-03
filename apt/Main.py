@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from Model import Model
+import sys;
 
 # TODO: TESTIRANJE DA SE VIDI STRUKTURA - START - MAKNI OVO KASNIJE
 # model = Model()
@@ -102,14 +103,20 @@ def test(X_train_file, y_train_file, X_test_file, y_test_file, train_out_file, t
     print 'epsilon:', model.get_param_epsilon()
     print 'gamma:', model.get_param_gamma()
 
-# test('../data/train/STS.input.MSRpar.txt', '../data/train/STS.gs.MSRpar.txt',
-#     '../data/test-gold/STS.input.MSRpar.txt', '../data/test-gold/STS.gs.MSRpar.txt',
-    # 'MSRpar_train.out', 'MSRpar_test.out', 'MSRpar_train_bad.txt', 'MSRpar_test_bad.txt')
-
-# test('../data/train/STS.input.MSRvid.txt', '../data/train/STS.gs.MSRvid.txt',
-#     '../data/test-gold/STS.input.MSRvid.txt', '../data/test-gold/STS.gs.MSRvid.txt',
-#     'MSRvid_train.out', 'MSRvid_test.out', 'MSRvid_train_bad.txt', 'MSRvid_test_bad.txt')
-
-    # test('../data/train/STS.input.SMTeuroparl.txt', '../data/train/STS.gs.SMTeuroparl.txt',
-# '../data/test-gold/STS.input.SMTeuroparl.txt', '../data/test-gold/STS.gs.SMTeuroparl.txt',
-    #     'SMTeuroparl_train.out', 'SMTeuroparl_test.out', 'SMTeuroparl_train_bad.txt', 'SMTeuroparl_test_bad.txt')
+# pokreni ucenje i evaluaciju
+k = 1
+if len(sys.argv) >= 2:
+    k = int(sys.argv[1])
+print "Trazena akcija k = ", k
+if k == 1:
+    test('../data/train/STS.input.MSRpar.txt', '../data/train/STS.gs.MSRpar.txt',
+         '../data/test-gold/STS.input.MSRpar.txt', '../data/test-gold/STS.gs.MSRpar.txt',
+         'MSRpar_train.out', 'MSRpar_test.out', 'MSRpar_train_bad.txt', 'MSRpar_test_bad.txt')
+elif k == 2:
+    test('../data/train/STS.input.MSRvid.txt', '../data/train/STS.gs.MSRvid.txt',
+         '../data/test-gold/STS.input.MSRvid.txt', '../data/test-gold/STS.gs.MSRvid.txt',
+         'MSRvid_train.out', 'MSRvid_test.out', 'MSRvid_train_bad.txt', 'MSRvid_test_bad.txt')
+elif k == 3:
+    test('../data/train/STS.input.SMTeuroparl.txt', '../data/train/STS.gs.SMTeuroparl.txt',
+         '../data/test-gold/STS.input.SMTeuroparl.txt', '../data/test-gold/STS.gs.SMTeuroparl.txt',
+         'SMTeuroparl_train.out', 'SMTeuroparl_test.out', 'SMTeuroparl_train_bad.txt', 'SMTeuroparl_test_bad.txt')

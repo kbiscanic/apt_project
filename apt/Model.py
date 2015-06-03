@@ -17,7 +17,6 @@ from features.kbiscanic.shallow_nerc import stocks_overlap_words
 from features.jagar.ngram_overlap import calc_ngram_overlap
 from features.karlo.word2vec import calc_w2v_similarity
 
-
 class Model:
     _NLTK_DATA_PATH = '../data/nltk'
 
