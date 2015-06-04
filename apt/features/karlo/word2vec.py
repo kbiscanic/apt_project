@@ -17,6 +17,8 @@ def calc_w2v_similarity(words):
                 n += 1
             except KeyError:
                 pass
+    if n == 0:
+        return [0]
     sim /= n
     return [sim]
 
