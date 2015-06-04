@@ -2,5 +2,5 @@ C: 1024
 epsilon: 0.3
 gamma: 0.0078125
 
-Pearson (train):
-Pearson (test):
+Pearson (train): 0.74932
+Pearson (test): 0.67690

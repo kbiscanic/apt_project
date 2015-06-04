@@ -1,0 +1,155 @@
+A pankda is eating bamboo.
+A panda bear is eating some bamboo.
+Tocno: 4.2
+Dobiveno: 1.64675971108
+Razlika: 2.55324028892
+A boy is checking a calender.
+A boy is looking at a calendar.
+Tocno: 3.8
+Dobiveno: 1.28815244853
+Razlika: 2.51184755147
+A monkey is swinging from limb to limb.
+A monkey is swinging from tree to tree.
+Tocno: 3.4
+Dobiveno: 0.887367353692
+Razlika: 2.51263264631
+The people got off the train.
+The people got off the train at the station.
+Tocno: 4.0
+Dobiveno: 1.96825756803
+Razlika: 2.03174243197
+A band is performing on a stage.
+A band is playing onstage.
+Tocno: 5.0
+Dobiveno: 2.94715448539
+Razlika: 2.05284551461
+Two women are wrestling.
+Two women are wrestling on the floor.
+Tocno: 4.0
+Dobiveno: 1.97403182487
+Razlika: 2.02596817513
+A kangroo is eating something.
+A kangaroo is eating.
+Tocno: 4.8
+Dobiveno: 0.329868823776
+Razlika: 4.47013117622
+A man and woman are walking together through the woods.
+A man and woman are walking arm in arm through a wooded area.
+Tocno: 4.0
+Dobiveno: 1.9487788195
+Razlika: 2.0512211805
+A man is talking on a phone.
+A man is singing to a woman.
+Tocno: 0.25
+Dobiveno: 2.57284287046
+Razlika: 2.32284287046
+A man is playing a guitar.
+A guy is playing an instrument.
+Tocno: 3.8
+Dobiveno: 1.85906096773
+Razlika: 1.94093903227
+A woman is playing a game with a man.
+A man is playing piano.
+Tocno: 0.6
+Dobiveno: 2.76510400189
+Razlika: 2.16510400189
+People step off a train.
+A group of people get off a train.
+Tocno: 4.6
+Dobiveno: 2.68445529936
+Razlika: 1.91554470064
+A man walks down a path.
+A man walks across a tight rope.
+Tocno: 0.8
+Dobiveno: 2.74837451654
+Razlika: 1.94837451654
+A rabbit is playing with a toy rabbit.
+A bunny is playing with a stuffed bunny.
+Tocno: 4.25
+Dobiveno: 1.18740339776
+Razlika: 3.06259660224
+A skunk is looking here and there.
+A skunk looks at the camera.
+Tocno: 2.4
+Dobiveno: 4.44787164131
+Razlika: 2.04787164131
+A badger is burrowing a hole.
+A badger is digging the earth.
+Tocno: 4.6
+Dobiveno: 2.33327986462
+Razlika: 2.26672013538
+A man is looking at a computer monitor.
+A man is using a laptop.
+Tocno: 2.75
+Dobiveno: 0.81364870951
+Razlika: 1.93635129049
+A person is cutting a meat.
+A person riding a mechanical bull
+Tocno: 0.0
+Dobiveno: 2.00654294655
+Razlika: 2.00654294655
+A woman is resting in a floating raft.
+A woman relaxes in an inner tube.
+Tocno: 3.8
+Dobiveno: 0.860572334946
+Razlika: 2.93942766505
+A person is drawing on a large touchscreen.
+A man is drawing on a digital dry erase board.
+Tocno: 3.0
+Dobiveno: 1.10005838555
+Razlika: 1.89994161445
+A woman is adding pasta to a pot of water.
+A woman is making noodles.
+Tocno: 3.6
+Dobiveno: 1.43956105825
+Razlika: 2.16043894175
+The lady peeled the potatoe.
+A woman is peeling a potato.
+Tocno: 4.75
+Dobiveno: 1.03671368358
+Razlika: 3.71328631642
+The dog pulled the dogs tail and then his leg.
+A monkey pulled a dogs tail.
+Tocno: 1.75
+Dobiveno: 3.76482904871
+Razlika: 2.01482904871
+A woman is cooking something.
+A woman is pouring ingredients into a frying pan.
+Tocno: 3.2
+Dobiveno: 0.911415229264
+Razlika: 2.28858477074
+A woman is swimming in the beach.
+A woman splashes around in the ocean's waves.
+Tocno: 3.2
+Dobiveno: 1.1148069802
+Razlika: 2.0851930198
+A man is carrying another man.
+A man sprays another man with water from a hose.
+Tocno: 0.8
+Dobiveno: 3.43249831792
+Razlika: 2.63249831792
+Two robots share a kiss.
+A male and female robot are kissing.
+Tocno: 3.8
+Dobiveno: 1.4643201332
+Razlika: 2.3356798668
+A woman puts cosmetics on her eyelid.
+The woman is pencilling on eye shadow.
+Tocno: 4.0
+Dobiveno: 0.956994144693
+Razlika: 3.04300585531
+The lady sliced a tomatoe.
+Someone is cutting a tomato.
+Tocno: 4.0
+Dobiveno: 0.325154941491
+Razlika: 3.67484505851
+A man jumping rope
+A man is talking.
+Tocno: 0.4
+Dobiveno: 2.45179385226
+Razlika: 2.05179385226
+The lady cut the tail and body of a shrimp.
+A woman is cleaning a shrimp.
+Tocno: 4.5
+Dobiveno: 2.16168920666
+Razlika: 2.33831079334

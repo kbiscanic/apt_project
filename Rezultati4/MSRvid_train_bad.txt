@@ -1,0 +1,155 @@
+A woman is stabbing a potato with a fork.
+A woman is puncturing a potato with a fork.
+Tocno: 5.0
+Dobiveno: 3.14313872004
+Razlika: 1.85686127996
+A cat is drinking milk.
+A kitten is drinking milk.
+Tocno: 4.0
+Dobiveno: 2.21803515386
+Razlika: 1.78196484614
+A turtle is walking.
+A tortoise is walking.
+Tocno: 4.4
+Dobiveno: 2.32629803346
+Razlika: 2.07370196654
+Someone is boiling okra in a pot.
+Someone is cooking okra in a pan.
+Tocno: 4.4
+Dobiveno: 2.03882863686
+Razlika: 2.36117136314
+A woman is cutting a leak.
+A woman is slicing a leek.
+Tocno: 4.0
+Dobiveno: 0.979153044211
+Razlika: 3.02084695579
+A woman is climbing a cliff.
+A woman is climbing a rock face.
+Tocno: 4.5
+Dobiveno: 2.50924191482
+Razlika: 1.99075808518
+Two men are fighting in a cow pasture.
+Two men are fighting in a cattle pen.
+Tocno: 4.0
+Dobiveno: 1.9618691466
+Razlika: 2.0381308534
+A man walking down the stairs.
+A man walks down a staircase.
+Tocno: 5.0
+Dobiveno: 2.99817004039
+Razlika: 2.00182995961
+A person is combing a cat hair.
+A person is brushing a cat.
+Tocno: 4.4
+Dobiveno: 2.43532611107
+Razlika: 1.96467388893
+A man is dancing on the ceiling of a room.
+A man is dancing upside-down on the ceiling.
+Tocno: 4.6
+Dobiveno: 2.67427149032
+Razlika: 1.92572850968
+A person is walking down a stone path.
+A man is walking down a sidewalk.
+Tocno: 3.5
+Dobiveno: 1.52391866342
+Razlika: 1.97608133658
+A animal is eating.
+The animal is hopping.
+Tocno: 0.4
+Dobiveno: 2.25602478497
+Razlika: 1.85602478497
+A cat cleans itself.
+A cat is licking itself.
+Tocno: 3.8
+Dobiveno: 1.58116528356
+Razlika: 2.21883471644
+A person drops a camera down an escelator.
+A man tosses a bag down an escalator.
+Tocno: 2.75
+Dobiveno: 0.252676526144
+Razlika: 2.49732347386
+A woman is slicing an onion.
+A women slicing lemons.
+Tocno: 1.4
+Dobiveno: 3.22399299966
+Razlika: 1.82399299966
+A man and woman are Bollywood dancing.
+A man an woman are dancing in the rain.
+Tocno: 1.667
+Dobiveno: 3.59747539341
+Razlika: 1.93047539341
+A woman is exercising.
+A woman lifts weights.
+Tocno: 3.4
+Dobiveno: 1.34148383022
+Razlika: 2.05851616978
+A man is preparing a hanging rope.
+A man is tying a noose.
+Tocno: 4.667
+Dobiveno: 1.1179330652
+Razlika: 3.5490669348
+A man is mowing grass.
+A guy is mowing the lawn.
+Tocno: 4.8
+Dobiveno: 2.44580726872
+Razlika: 2.35419273128
+Someone is greating a carrot.
+A woman is grating an orange food.
+Tocno: 2.5
+Dobiveno: 0.0621718990929
+Razlika: 2.43782810091
+A rabbit is sniffing and pawing a stuffed rabbit.
+A live rabbit is playing with a stuffed animal bunny.
+Tocno: 4.5
+Dobiveno: 2.40531629362
+Razlika: 2.09468370638
+A man is taking out the insides of a green pepper.
+Someone is removing the seeds from a bell pepper.
+Tocno: 4.0
+Dobiveno: 2.21882689941
+Razlika: 1.78117310059
+A woman is applying cosmetics to her face.
+A woman is putting on makeup.
+Tocno: 4.6
+Dobiveno: 1.82536382664
+Razlika: 2.77463617336
+A woman rapidly fires a handgun.
+A woman is shooting off a gun.
+Tocno: 4.4
+Dobiveno: 1.62284778459
+Razlika: 2.77715221541
+A slow loris bites a persons fingers.
+A small animal is chewing on a finger.
+Tocno: 2.5
+Dobiveno: 0.563568388005
+Razlika: 1.936431612
+Someone is scratching an animals belly.
+A woman is stroking a lemur.
+Tocno: 2.0
+Dobiveno: 0.154839866137
+Razlika: 1.84516013386
+A dog knocks a boy into the water twice.
+A dog pushes a toddler into a rain puddle.
+Tocno: 2.692
+Dobiveno: 0.955905301128
+Razlika: 1.73609469887
+The bird is taking a bath under the faucet.
+A bird is bathing in a sink.
+Tocno: 4.429
+Dobiveno: 2.49266952186
+Razlika: 1.93633047814
+A girl is dragged downhill by a dog.
+A dog is pulling a child down a hill.
+Tocno: 3.8
+Dobiveno: 1.52009959772
+Razlika: 2.27990040228
+The man is using a sledghammer to break the concrete block that is on the other man.
+A man breaks a slab of concrete that is lying on a prone man with a sledge hammer.
+Tocno: 5.0
+Dobiveno: 2.99619999598
+Razlika: 2.00380000402
+A monkey is karate kicking at someone's gloved hand.
+A monkey pratices martial arts.
+Tocno: 3.5
+Dobiveno: 1.03595538934
+Razlika: 2.46404461066

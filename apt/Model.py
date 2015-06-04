@@ -261,6 +261,6 @@ class Model:
         if preprocess_X:
             X = self.get_features(X)
         p_labels, _, _ = svm_predict(None, X, self._model, "-q")
-        y = [max(min(5, x), 0) for x in p_labels]
-        return y
+        # y = [max(min(5, x), 0) for x in p_labels]
+        return p_labels
 
