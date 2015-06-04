@@ -185,7 +185,7 @@ class Model:
     def train(self, X, y, preprocess_X=True, C=1, gamma=1, epsilon=0.1):
         if preprocess_X:
             X = self.get_features(X)
-        self._model = svm_train(y, X, '-s 3 -t 2 -c ' + str(C) + ' -g ' + str(gamma) + ' -p ' + str(epsilon))
+        self._model = svm_train(y, X, '-s 3 -t 2 -q -c ' + str(C) + ' -g ' + str(gamma) + ' -p ' + str(epsilon))
         self._param_C = C
         self._param_gamma = gamma
         self._param_epsilon = epsilon
@@ -226,8 +226,11 @@ class Model:
             y_train_folds.append(y_train.tolist())
             y_validate_folds.append(y_validate.tolist())
 
-
+        # brojaci napretka
         cnt = 0
+        max_cnt = len(C_set) * len(gamma_set) * len(epsilon_set)
+        print 'Ukupno koraka:', max_cnt
+
         for C in C_set:
             for gamma in gamma_set:
                 for epsilon in epsilon_set:
@@ -238,9 +241,10 @@ class Model:
                         predicted_y = self.predict(X_validate_folds[i], False)
                         score_sum += np.corrcoef(y_validate_folds[i], predicted_y)[0, 1]
 
+                    # povecaj brojac i ispisi ako treba
                     cnt += 1
                     if cnt % 500 == 0:
-                        print cnt
+                        print cnt, '/', max_cnt
 
                     # da li su najbolji parametri? (moze se promatrati suma umjesto avg jer je uvijek k preklopa)
                     if best_score_sum is None or score_sum > best_score_sum:
@@ -253,10 +257,10 @@ class Model:
         self.train(X.tolist(), y.tolist(), False, best_C, best_gamma, best_epsilon)
 
     # vraca predikciju za 1 primjer ili listu primjera
-    # ako se zada varijabla y koja predstavlja tocnu klasifikaciju, onda se vracaju i dodatni podaci o preciznosti
     def predict(self, X, preprocess_X=True):
         if preprocess_X:
             X = self.get_features(X)
-        y_true = [0] * len(X)
-        p_labels, p_acc, p_vals = svm_predict(y_true, X, self._model)
-        return p_labels
+        p_labels, _, _ = svm_predict(None, X, self._model, "-q")
+        y = [max(min(5, x), 0) for x in p_labels]
+        return y
+
