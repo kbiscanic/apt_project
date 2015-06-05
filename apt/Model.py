@@ -15,7 +15,7 @@ from features.kbiscanic.vector_space_similarity import vector_space_similarity_w
 from features.kbiscanic.shallow_nerc import named_overlap_words
 from features.kbiscanic.shallow_nerc import stocks_overlap_words
 from features.jagar.ngram_overlap import calc_ngram_overlap
-from features.karlo.word2vec import calc_w2v_similarity
+from features.karlo.word2vec import calc_w2v_similarity, w2v_model_load, w2v_model_unload
 
 class Model:
     _NLTK_DATA_PATH = '../data/nltk'
@@ -130,6 +130,8 @@ class Model:
 
     # vraca znacajke za jedan ili vise primjera (1 primjer je lista sa 2 recenice)
     def get_features(self, X):
+        w2v_model_load()
+
         X = np.array(X)
         if X.ndim == 1:
             X = np.array([X])
@@ -179,6 +181,7 @@ class Model:
 
             X_features.append(features)
 
+        w2v_model_unload()
         return X_features
 
     # obavlja treniranje modela sa zadanim parametrima
