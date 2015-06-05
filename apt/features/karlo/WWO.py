@@ -27,7 +27,7 @@ def freq(word):
 
 def read_data(filename):
     f = open(filename, 'r')
-    now = int(f.readline())  # number of words
+    now = int(f.readline())  # sum of frequencies
 
     ws = {}  # words and frequencies
     for line in f:
@@ -41,7 +41,10 @@ data = read_data("features/karlo/word-frequencies.txt")
 
 
 def calc_ic(word):
-    return log(data[0] / float(data[1].get(word, 0.1)))  # TODO koji broj ima smisla
+    if word in data[1]:
+        return log(data[0] / float(data[1][word]))
+    else:
+        return 0
 
 
 def calc_wwc(words1, words2):
