@@ -66,16 +66,16 @@ def test(X_train_file, y_train_file, X_test_file, y_test_file, train_out_file, t
     print 'epsilon:', model.get_param_epsilon()
     print 'gamma:', model.get_param_gamma()
 
-    print "Tocni (train): ", y_train
+    # print "Tocni (train): ", y_train
     predicted_train = model.predict(X_train)
-    print "Dobiveni (train): ", predicted_train
+    # print "Dobiveni (train): ", predicted_train
     write_output(train_out_file, predicted_train)
     if (train_bad_out_file is not None):
         write_low_scored(train_bad_out_file, X_train, y_train, predicted_train, 50)
 
-    print "Tocni (test): ", y_test
+    # print "Tocni (test): ", y_test
     predicted_test = model.predict(X_test)
-    print "Dobiveni (test): ", predicted_test
+    # print "Dobiveni (test): ", predicted_test
     write_output(test_out_file, predicted_test)
     if (test_bad_out_file is not None):
         write_low_scored(test_bad_out_file, X_test, y_test, predicted_test, 50)
