@@ -169,12 +169,13 @@ class Model:
             features.append(wordnet_aug_overlap_words(lemma_words))
             features.extend(calc_wwo(all_words))
             features.extend(calc_wwo(lemma_words))
-            features.append(vector_space_similarity_words(lemma_words, False))
-            features.append(vector_space_similarity_words(lemma_words, True))
+            # features.append(vector_space_similarity_words(lemma_words, False))
+            #features.append(vector_space_similarity_words(lemma_words, True))
             features.extend(calc_nda(words))
             features.extend(calc_ndc(all_words))
             features.extend(calc_no(all_words))
-            features.extend(calc_w2v_similarity(lemma_words))
+            features.extend(calc_w2v_similarity(lemma_words, False))
+            features.extend(calc_w2v_similarity(lemma_words, True))
 
             X_features.append(features)
 

@@ -6,27 +6,35 @@ from numpy import dot, array
 
 from WWO import calc_ic
 
-def sentence_vec(words):
+
+def sentence_vec(words, ic=False):
     vec = None
     for w in words:
         try:
             v = w2v_model[w]
-            ic = calc_ic(w)
             if vec is None:
-                vec = [ic * v[i] for i in range(len(v))]
+                if ic:
+                    ic = calc_ic(w)
+                    vec = [ic * v[i] for i in range(len(v))]
+                else:
+                    vec = [v[i] for i in range(len(v))]
             else:
-                vec = [ic * v[i] + vec[i] for i in range(len(v))]
+                if ic:
+                    ic = calc_ic(w)
+                    vec = [ic * v[i] + vec[i] for i in range(len(v))]
+                else:
+                    vec = [v[i] + vec[i] for i in range(len(v))]
         except KeyError:
             pass
     return vec
 
 
-def calc_w2v_similarity(words):
+def calc_w2v_similarity(words, ic=False):
     words1 = words[0]
     words2 = words[1]
 
-    vec1 = sentence_vec(words1)
-    vec2 = sentence_vec(words2)
+    vec1 = sentence_vec(words1, ic)
+    vec2 = sentence_vec(words2, ic)
 
     return [dot(matutils.unitvec(array(vec1)), matutils.unitvec(array(vec2)))]
 
