@@ -48,37 +48,54 @@ def write_low_scored(file, X, y, output, n):
             f.write('Razlika: ' + str(diff) + '\n')
 
 # testiranje za 1 primjer
-def test(X_train_file, y_train_file, X_test_file, y_test_file, train_out_file, test_out_file, train_bad_out_file=None,
-         test_bad_out_file=None):
-    X_train = load_data_X(X_train_file)
-    y_train = load_data_y(y_train_file)
-    X_test = load_data_X(X_test_file)
-    y_test = load_data_y(y_test_file)
+# moze se zadati model ako je vec naucen
+def test(X_train_files, y_train_files, X_test_files, y_test_files, train_out_file, test_out_file,
+         train_bad_out_file=None,
+         test_bad_out_file=None, model=None):
+    X_train = []
+    y_train = []
+    X_test = []
+    y_test = []
+    for file in X_train_files:
+        X_train.extend(load_data_X(file))
+    for file in y_train_files:
+        y_train.extend(load_data_y(file))
+    for file in X_test_files:
+        X_test.extend(load_data_X(file))
+    for file in y_test_files:
+        y_test.extend(load_data_y(file))
 
-    model = Model()
-    C_set = [2 ** x for x in range(-5, 15 + 1)]
-    gamma_set = [2 ** x for x in range(-15, 3 + 1)]
-    epsilon_set = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8,
-                   0.9, 1, 2]
-    model.train_k_fold(X_train, y_train, C_set, gamma_set, epsilon_set, 10)
+    if model is None:
+        model = Model()
+        C_set = [2 ** x for x in range(-5, 15 + 1)]
+        gamma_set = [2 ** x for x in range(-15, 3 + 1)]
+        epsilon_set = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7,
+                       0.8,
+                       0.9, 1, 2]
+        model.train_k_fold(X_train, y_train, C_set, gamma_set, epsilon_set, 10)
+        # model.train(X_train, y_train)
 
     print 'C:', model.get_param_C()
     print 'epsilon:', model.get_param_epsilon()
     print 'gamma:', model.get_param_gamma()
 
-    # print "Tocni (train): ", y_train
-    predicted_train = model.predict(X_train)
-    # print "Dobiveni (train): ", predicted_train
-    write_output(train_out_file, predicted_train)
-    if (train_bad_out_file is not None):
-        write_low_scored(train_bad_out_file, X_train, y_train, predicted_train, 50)
+    if train_out_file != '':
+        # print "Tocni (train): ", y_train
+        predicted_train = model.predict(X_train)
+        # print "Dobiveni (train): ", predicted_train
+        write_output(train_out_file, predicted_train)
+        if (train_bad_out_file is not None):
+            write_low_scored(train_bad_out_file, X_train, y_train, predicted_train, 50)
 
-    # print "Tocni (test): ", y_test
-    predicted_test = model.predict(X_test)
-    # print "Dobiveni (test): ", predicted_test
-    write_output(test_out_file, predicted_test)
-    if (test_bad_out_file is not None):
-        write_low_scored(test_bad_out_file, X_test, y_test, predicted_test, 50)
+    if test_out_file != '':
+        # print "Tocni (test): ", y_test
+        predicted_test = model.predict(X_test)
+        # print "Dobiveni (test): ", predicted_test
+        write_output(test_out_file, predicted_test)
+        if (test_bad_out_file is not None):
+            write_low_scored(test_bad_out_file, X_test, y_test, predicted_test, 50)
+
+    return model
 
 # pokreni ucenje i evaluaciju
 k = 1
@@ -86,14 +103,41 @@ if len(sys.argv) >= 2:
     k = int(sys.argv[1])
 print "Trazena akcija k =", k
 if k == 1:
-    test('../data/train/STS.input.MSRpar.txt', '../data/train/STS.gs.MSRpar.txt',
-         '../data/test-gold/STS.input.MSRpar.txt', '../data/test-gold/STS.gs.MSRpar.txt',
+    # MSRpar
+    test(['../data/train/STS.input.MSRpar.txt'], ['../data/train/STS.gs.MSRpar.txt'],
+         ['../data/test-gold/STS.input.MSRpar.txt'], ['../data/test-gold/STS.gs.MSRpar.txt'],
          'MSRpar_train.out', 'MSRpar_test.out', 'MSRpar_train_bad.txt', 'MSRpar_test_bad.txt')
 elif k == 2:
-    test('../data/train/STS.input.MSRvid.txt', '../data/train/STS.gs.MSRvid.txt',
-         '../data/test-gold/STS.input.MSRvid.txt', '../data/test-gold/STS.gs.MSRvid.txt',
+    # MSRvid
+    test(['../data/train/STS.input.MSRvid.txt'], ['../data/train/STS.gs.MSRvid.txt'],
+         ['../data/test-gold/STS.input.MSRvid.txt'], ['../data/test-gold/STS.gs.MSRvid.txt'],
          'MSRvid_train.out', 'MSRvid_test.out', 'MSRvid_train_bad.txt', 'MSRvid_test_bad.txt')
 elif k == 3:
-    test('../data/train/STS.input.SMTeuroparl.txt', '../data/train/STS.gs.SMTeuroparl.txt',
-         '../data/test-gold/STS.input.SMTeuroparl.txt', '../data/test-gold/STS.gs.SMTeuroparl.txt',
+    # SMTeuroparl i SMTnews
+    print 'SMTeuroparl'
+    model = test(['../data/train/STS.input.SMTeuroparl.txt'], ['../data/train/STS.gs.SMTeuroparl.txt'],
+                 ['../data/test-gold/STS.input.SMTeuroparl.txt'], ['../data/test-gold/STS.gs.SMTeuroparl.txt'],
          'SMTeuroparl_train.out', 'SMTeuroparl_test.out', 'SMTeuroparl_train_bad.txt', 'SMTeuroparl_test_bad.txt')
+    print 'SMTnews'
+    test([], [],
+        ['../data/test-gold/STS.input.surprise.SMTnews.txt'], ['../data/test-gold/STS.gs.surprise.SMTnews.txt'],
+        '', 'SMTnews_test.out', '', 'SMTnews_test_bad.txt', model)
+elif k == 4:
+    # OnWn i All
+    print 'OnWn'
+    model = test(['../data/train/STS.input.MSRpar.txt', '../data/train/STS.input.MSRvid.txt',
+                  '../data/train/STS.input.SMTeuroparl.txt'],
+                 ['../data/train/STS.gs.MSRpar.txt', '../data/train/STS.gs.MSRvid.txt',
+                  '../data/train/STS.gs.SMTeuroparl.txt'],
+                 ['../data/test-gold/STS.input.surprise.OnWN.txt'],
+                 ['../data/test-gold/STS.gs.surprise.OnWN.txt'],
+                 'OnWn_train.out', 'OnWn_test.out', 'OnWn_train_bad.txt', 'OnWn_test_bad.txt')
+    print 'All'
+    test([], [],
+        ['../data/test-gold/STS.input.MSRpar.txt', '../data/test-gold/STS.input.MSRvid.txt',
+         '../data/test-gold/STS.input.SMTeuroparl.txt', '../data/test-gold/STS.input.surprise.SMTnews.txt',
+         '../data/test-gold/STS.input.surprise.OnWN.txt'],
+        ['../data/test-gold/STS.gs.MSRpar.txt', '../data/test-gold/STS.gs.MSRvid.txt',
+         '../data/test-gold/STS.gs.SMTeuroparl.txt', '../data/test-gold/STS.gs.surprise.SMTnews.txt',
+         '../data/test-gold/STS.gs.surprise.OnWN.txt'],
+        '', 'All_test.out', '', 'All_test_bad.txt', model)
