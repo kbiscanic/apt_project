@@ -50,8 +50,8 @@ def write_low_scored(file, X, y, output, n):
 # testiranje za 1 primjer
 # moze se zadati model ako je vec naucen
 def test(X_train_files, y_train_files, X_test_files, y_test_files, train_out_file, test_out_file,
-         train_bad_out_file=None,
-         test_bad_out_file=None, model=None):
+         train_bad_out_file=None, test_bad_out_file=None,
+         model=None, C_set=None, gamma_set=None, epsilon_set=None, k=None):
     X_train = []
     y_train = []
     X_test = []
@@ -66,14 +66,17 @@ def test(X_train_files, y_train_files, X_test_files, y_test_files, train_out_fil
         y_test.extend(load_data_y(file))
 
     if model is None:
+        if C_set is None:
+            C_set = [2 ** x for x in range(-5, 15 + 1)]
+        if gamma_set is None:
+            gamma_set = [2 ** x for x in range(-15, 3 + 1)]
+        if epsilon_set is None:
+            epsilon_set = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6,
+                           0.7, 0.8, 0.9, 1, 2]
+        if k is None:
+            k = 10
         model = Model()
-        C_set = [2 ** x for x in range(-5, 15 + 1)]
-        gamma_set = [2 ** x for x in range(-15, 3 + 1)]
-        epsilon_set = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7,
-                       0.8,
-                       0.9, 1, 2]
-        model.train_k_fold(X_train, y_train, C_set, gamma_set, epsilon_set, 10)
-        # model.train(X_train, y_train)
+        model.train_k_fold(X_train, y_train, C_set, gamma_set, epsilon_set, k)
 
     print 'C:', model.get_param_C()
     print 'epsilon:', model.get_param_epsilon()
@@ -104,11 +107,13 @@ if len(sys.argv) >= 2:
 print "Trazena akcija k =", k
 if k == 1:
     # MSRpar
+    print 'MSRpar'
     test(['../data/train/STS.input.MSRpar.txt'], ['../data/train/STS.gs.MSRpar.txt'],
          ['../data/test-gold/STS.input.MSRpar.txt'], ['../data/test-gold/STS.gs.MSRpar.txt'],
          'MSRpar_train.out', 'MSRpar_test.out', 'MSRpar_train_bad.txt', 'MSRpar_test_bad.txt')
 elif k == 2:
     # MSRvid
+    print 'MSRvid'
     test(['../data/train/STS.input.MSRvid.txt'], ['../data/train/STS.gs.MSRvid.txt'],
          ['../data/test-gold/STS.input.MSRvid.txt'], ['../data/test-gold/STS.gs.MSRvid.txt'],
          'MSRvid_train.out', 'MSRvid_test.out', 'MSRvid_train_bad.txt', 'MSRvid_test_bad.txt')
@@ -131,7 +136,9 @@ elif k == 4:
                   '../data/train/STS.gs.SMTeuroparl.txt'],
                  ['../data/test-gold/STS.input.surprise.OnWN.txt'],
                  ['../data/test-gold/STS.gs.surprise.OnWN.txt'],
-                 'OnWn_train.out', 'OnWn_test.out', 'OnWn_train_bad.txt', 'OnWn_test_bad.txt')
+                 'OnWn_train.out', 'OnWn_test.out', 'OnWn_train_bad.txt', 'OnWn_test_bad.txt',
+                 None, [2 ** x for x in range(-3, 11 + 1)], [2 ** x for x in range(-15, 3 + 1)],
+                 [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.25, 0.5, 0.75, 1, 2], 3)
     print 'All'
     test([], [],
         ['../data/test-gold/STS.input.MSRpar.txt', '../data/test-gold/STS.input.MSRvid.txt',

@@ -170,7 +170,7 @@ class Model:
             features.extend(calc_wwo(all_words))
             features.extend(calc_wwo(lemma_words))
             # features.append(vector_space_similarity_words(lemma_words, False))
-            #features.append(vector_space_similarity_words(lemma_words, True))
+            # features.append(vector_space_similarity_words(lemma_words, True))
             features.extend(calc_nda(words))
             features.extend(calc_ndc(all_words))
             features.extend(calc_no(all_words))
@@ -204,7 +204,7 @@ class Model:
         return self._param_epsilon
 
     # obavlja treniranje modela sa k-unakrsnom provjerom od k preklopa na zadanim vrijednostima za C, gamma i epsilon
-    def train_k_fold(self, X, y, C_set, gamma_set, epsilon_set, k=5):
+    def train_k_fold(self, X, y, C_set, gamma_set, epsilon_set, k=10):
         print 'Zapocinje preprocessing, odredjivanje znacajki i priprema podataka'
 
         X = np.array(self.get_features(X))
