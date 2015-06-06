@@ -1,0 +1,6 @@
+C: 2048
+epsilon: 0.4
+gamma: 0.00390625
+
+Pearson (train):
+Pearson (test):

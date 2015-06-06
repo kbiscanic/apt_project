@@ -258,9 +258,10 @@ def svm_predict(y, x, m, options=""):
 
     if y is not None:
         ACC, MSE, SCC = evaluations(y, pred_labels)
-        l = len(y)
 
-        '''if svm_type in [EPSILON_SVR, NU_SVR]:
+        '''l = len(y)
+
+        if svm_type in [EPSILON_SVR, NU_SVR]:
             info("Mean squared error = %g (regression)" % MSE)
             info("Squared correlation coefficient = %g (regression)" % SCC)
         else:

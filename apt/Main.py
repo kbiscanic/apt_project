@@ -2,27 +2,6 @@
 from Model import Model
 import sys;
 
-# TODO: TESTIRANJE DA SE VIDI STRUKTURA - START - MAKNI OVO KASNIJE
-# model = Model()
-# print model.preprocess(["cater pillar", "caterpillar"])  # treba ispast [caterpillar] i [caterpillar]
-# print model.preprocess(["a b c de ef", "ab bc d e f"])  # treba ispast [ab c de ef] i [ab bc de f]
-# print model.preprocess(["$US1234 $US1,234.00 $US345.12 $US -123.13 a sada normalni broj = 213.12", ""])
-# print model.get_features(["r1", "r2"])
-# print model.get_features([["r1", "r2"], ["a", "b"]])
-# print model.preprocess([
-# u"The broader Standard & Poor's 500 Index <.SPX> shed 2.38 points, or 0.24 percent, at 995.10",
-#    u"Albuquerque Mayor Martin Chavez said investigators felt confident that with the arrests they had \"at least one of the fires resolved.\""
-# ], True, True, False)
-# print model.preprocess([
-#    u"The broader Standard & Poor's 500 Index <.SPX> shed 2.38 points, or 0.24 percent, at 995.10",
-#    u"Albuquerque Mayor Martin Chavez said investigators felt confident that with the arrests they had \"at least one of the fires resolved.\""
-# ], True, True, True)
-# print model.get_features([
-#    u"The broader Standard & Poor's 500 Index <.SPX> shed 2.38 points, or 0.24 percent, at 995.10",
-#    u"Albuquerque Mayor Martin Chavez said investigators felt confident that with the arrests they had \"at least one of the fires resolved.\""
-# ])
-# TODO: TESTIRANJE DA SE VIDI STRUKTURA - END - MAKNI OVO KASNIJE
-
 # ucitava primjere iz zadane datoteke
 def load_data_X(file):
     X = []
@@ -83,6 +62,10 @@ def test(X_train_file, y_train_file, X_test_file, y_test_file, train_out_file, t
                    0.9, 1, 2]
     model.train_k_fold(X_train, y_train, C_set, gamma_set, epsilon_set, 10)
 
+    print 'C:', model.get_param_C()
+    print 'epsilon:', model.get_param_epsilon()
+    print 'gamma:', model.get_param_gamma()
+
     print "Tocni (train): ", y_train
     predicted_train = model.predict(X_train)
     print "Dobiveni (train): ", predicted_train
@@ -96,10 +79,6 @@ def test(X_train_file, y_train_file, X_test_file, y_test_file, train_out_file, t
     write_output(test_out_file, predicted_test)
     if (test_bad_out_file is not None):
         write_low_scored(test_bad_out_file, X_test, y_test, predicted_test, 50)
-
-    print 'C:', model.get_param_C()
-    print 'epsilon:', model.get_param_epsilon()
-    print 'gamma:', model.get_param_gamma()
 
 # pokreni ucenje i evaluaciju
 k = 1
