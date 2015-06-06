@@ -1,0 +1,255 @@
+A man and a woman are kissing.
+A man and woman kiss.
+Tocno: 5.0
+Dobiveno: 3.17266828133
+Razlika: 1.82733171867
+A pankda is eating bamboo.
+A panda bear is eating some bamboo.
+Tocno: 4.2
+Dobiveno: 2.08615204783
+Razlika: 2.11384795217
+The lady chopped up the green onions.
+The lady cut up a green onion.
+Tocno: 4.8
+Dobiveno: 2.90890288442
+Razlika: 1.89109711558
+A boy is checking a calender.
+A boy is looking at a calendar.
+Tocno: 3.8
+Dobiveno: 1.78242115433
+Razlika: 2.01757884567
+A  man is dancing.
+A man and woman is dancing.
+Tocno: 2.0
+Dobiveno: 4.19752413549
+Razlika: 2.19752413549
+A monkey is swinging from limb to limb.
+A monkey is swinging from tree to tree.
+Tocno: 3.4
+Dobiveno: 1.59672629831
+Razlika: 1.80327370169
+A band is performing on a stage.
+A band is playing onstage.
+Tocno: 5.0
+Dobiveno: 3.09592280301
+Razlika: 1.90407719699
+A kangroo is eating something.
+A kangaroo is eating.
+Tocno: 4.8
+Dobiveno: 0.838841740425
+Razlika: 3.96115825957
+A man is eating food.
+A man is eating something.
+Tocno: 4.2
+Dobiveno: 2.54279695546
+Razlika: 1.65720304454
+A man and woman are walking together through the woods.
+A man and woman are walking arm in arm through a wooded area.
+Tocno: 4.0
+Dobiveno: 2.37743501726
+Razlika: 1.62256498274
+A man is fitting silencer on a pistol.
+A man is adding a silencer to a gun.
+Tocno: 4.5
+Dobiveno: 2.91038152991
+Razlika: 1.58961847009
+A man is playing with frogs
+A cat is playing with a camera.
+Tocno: 0.75
+Dobiveno: 2.3340128577
+Razlika: 1.5840128577
+The woman is cracking eggs into a bowl.
+The lady broke raw eggs into a bowl.
+Tocno: 4.8
+Dobiveno: 3.01276706186
+Razlika: 1.78723293814
+A man is talking on a phone.
+A man is singing to a woman.
+Tocno: 0.25
+Dobiveno: 2.25074936641
+Razlika: 2.00074936641
+A man is playing a guitar.
+A guy is playing an instrument.
+Tocno: 3.8
+Dobiveno: 2.09665345233
+Razlika: 1.70334654767
+A woman is playing a game with a man.
+A man is playing piano.
+Tocno: 0.6
+Dobiveno: 3.09558756416
+Razlika: 2.49558756416
+A man walks down a path.
+A man walks across a tight rope.
+Tocno: 0.8
+Dobiveno: 2.61442163422
+Razlika: 1.81442163422
+A rabbit is playing with a toy rabbit.
+A bunny is playing with a stuffed bunny.
+Tocno: 4.25
+Dobiveno: 1.94483550539
+Razlika: 2.30516449461
+A guy is playing hackysack
+A man is playing a key-board.
+Tocno: 1.0
+Dobiveno: 2.58273246101
+Razlika: 1.58273246101
+Two zebras are playing.
+Zebras are socializing.
+Tocno: 4.25
+Dobiveno: 2.21149205774
+Razlika: 2.03850794226
+A badger is burrowing a hole.
+A badger is digging the earth.
+Tocno: 4.6
+Dobiveno: 2.26236573679
+Razlika: 2.33763426321
+A turtle walks over the ground.
+A large turtle crawls in the grass.
+Tocno: 3.75
+Dobiveno: 1.74130198898
+Razlika: 2.00869801102
+A person is cutting a meat.
+A person riding a mechanical bull
+Tocno: 0.0
+Dobiveno: 1.69756438892
+Razlika: 1.69756438892
+A woman is resting in a floating raft.
+A woman relaxes in an inner tube.
+Tocno: 3.8
+Dobiveno: 0.85176751944
+Razlika: 2.94823248056
+Animals are playing in water.
+Two men are playing ping pong.
+Tocno: 0.0
+Dobiveno: 1.62235274682
+Razlika: 1.62235274682
+A person is drawing on a large touchscreen.
+A man is drawing on a digital dry erase board.
+Tocno: 3.0
+Dobiveno: 1.06664635853
+Razlika: 1.93335364147
+A man and woman are eating at a table.
+A couple are eating a meal and talking.
+Tocno: 3.0
+Dobiveno: 0.937224444111
+Razlika: 2.06277555589
+A girl is making eyelid.
+A woman is applying eyeshadow.
+Tocno: 2.0
+Dobiveno: 0.350516606266
+Razlika: 1.64948339373
+A woman is adding pasta to a pot of water.
+A woman is making noodles.
+Tocno: 3.6
+Dobiveno: 1.79823646059
+Razlika: 1.80176353941
+Two puppies are playing with each other.
+Some men are playing soccer.
+Tocno: 0.2
+Dobiveno: 1.93043745604
+Razlika: 1.73043745604
+The lady peeled the potatoe.
+A woman is peeling a potato.
+Tocno: 4.75
+Dobiveno: 1.58307348522
+Razlika: 3.16692651478
+The dog pulled the dogs tail and then his leg.
+A monkey pulled a dogs tail.
+Tocno: 1.75
+Dobiveno: 3.51698940461
+Razlika: 1.76698940461
+A woman beats two eggs in a bowl.
+A person is mixing ingredients in a bowl.
+Tocno: 3.0
+Dobiveno: 1.28881977867
+Razlika: 1.71118022133
+Someone typed on a keyboard.
+Someone is typing.
+Tocno: 4.5
+Dobiveno: 2.88925203136
+Razlika: 1.61074796864
+A woman is cooking something.
+A woman is pouring ingredients into a frying pan.
+Tocno: 3.2
+Dobiveno: 1.24094749217
+Razlika: 1.95905250783
+A woman is swimming in the beach.
+A woman splashes around in the ocean's waves.
+Tocno: 3.2
+Dobiveno: 1.29947636917
+Razlika: 1.90052363083
+A man is carrying another man.
+A man sprays another man with water from a hose.
+Tocno: 0.8
+Dobiveno: 2.96419310942
+Razlika: 2.16419310942
+A cat is sliding upside down under a couch.
+A cat is crawling under a piece of furniture on it's back.
+Tocno: 3.2
+Dobiveno: 1.47812257728
+Razlika: 1.72187742272
+A chef is cleaning up a bowl of soup.
+A man is wiping the edge of a bowl off.
+Tocno: 2.533
+Dobiveno: 0.847767105388
+Razlika: 1.68523289461
+An explosion is booming in the desert.
+A nuclear weapon explodes in a desert.
+Tocno: 3.4
+Dobiveno: 1.39583577423
+Razlika: 2.00416422577
+An oriental lady is cutting a carrot into thin pieces.
+A woman is slicing a carrot.
+Tocno: 3.6
+Dobiveno: 1.96540072062
+Razlika: 1.63459927938
+A couple are running towards the ocean.
+A man and and woman are running together, holding hands.
+Tocno: 2.818
+Dobiveno: 0.845456074401
+Razlika: 1.9725439256
+A woman is chopping a hard egg.
+A person is cutting  boiled egg into pieces.
+Tocno: 3.533
+Dobiveno: 1.77697022273
+Razlika: 1.75602977727
+Two robots share a kiss.
+A male and female robot are kissing.
+Tocno: 3.8
+Dobiveno: 1.64410155929
+Razlika: 2.15589844071
+A woman puts cosmetics on her eyelid.
+The woman is pencilling on eye shadow.
+Tocno: 4.0
+Dobiveno: 1.25335062924
+Razlika: 2.74664937076
+A man is slicing a pepper.
+A person cuts a big green pepper apart.
+Tocno: 3.8
+Dobiveno: 1.86613123698
+Razlika: 1.93386876302
+A small monkey walks through water.
+A monkey is wading across a marsh.
+Tocno: 3.4
+Dobiveno: 1.59514553986
+Razlika: 1.80485446014
+The lady sliced a tomatoe.
+Someone is cutting a tomato.
+Tocno: 4.0
+Dobiveno: 1.14906748926
+Razlika: 2.85093251074
+A man jumping rope
+A man is talking.
+Tocno: 0.4
+Dobiveno: 2.17450167731
+Razlika: 1.77450167731
+Four boys are standing in front of the burning car.
+Four young men stand still as a car explodes behind them.
+Tocno: 3.75
+Dobiveno: 1.96756051496
+Razlika: 1.78243948504
+The lady cut the tail and body of a shrimp.
+A woman is cleaning a shrimp.
+Tocno: 4.5
+Dobiveno: 1.86974400656
+Razlika: 2.63025599344
