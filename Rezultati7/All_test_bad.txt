@@ -1,0 +1,255 @@
+A kangroo is eating something.
+A kangaroo is eating.
+Tocno: 4.8
+Dobiveno: 0.921252938934
+Razlika: 3.87874706107
+A woman is resting in a floating raft.
+A woman relaxes in an inner tube.
+Tocno: 3.8
+Dobiveno: 0.823391564974
+Razlika: 2.97660843503
+Maij-Weggen report (A5-0323/2000)
+Relation Maij-Weggen (A5-0323/2000)
+Tocno: 4.25
+Dobiveno: 0.0774840179419
+Razlika: 4.17251598206
+I am one of those Members who attends sittings quite faithfully.
+I am part of parliamentarians who are rather present honourably.
+Tocno: 4.0
+Dobiveno: 0.86480026021
+Razlika: 3.13519973979
+Maij-Weggen report (A5-0323/2000)
+Report/ratio Maij-Weggen (A5-0323/2000)
+Tocno: 4.75
+Dobiveno: 1.5224701328
+Razlika: 3.2275298672
+Other ways are needed.
+Other means should be found.
+Tocno: 4.6
+Dobiveno: 0.521235018433
+Razlika: 4.07876498157
+Tocqueville believed that there are no effective long-term constraints on this tendency.
+Tocqueville thought in the long run, nothing can be really opposed this trend.
+Tocno: 4.5
+Dobiveno: 1.26651646313
+Razlika: 3.23348353687
+Other ways are needed.
+Other means should be found.
+Tocno: 4.6
+Dobiveno: 0.521235018433
+Razlika: 4.07876498157
+restrict or confine
+place limits on (extent or access).
+Tocno: 4.75
+Dobiveno: 0.921381618223
+Razlika: 3.82861838178
+Bring back to life, return from the dead
+cause to become alive again.
+Tocno: 4.75
+Dobiveno: 0.573363714116
+Razlika: 4.17663628588
+an interpretation, an account or reading of an event or situation
+a mental representation of the meaning or significance of something.
+Tocno: 3.5
+Dobiveno: 0.505296983577
+Razlika: 2.99470301642
+festive social event, celebration
+an occasion on which people can assemble for social interaction and entertainment.
+Tocno: 4.25
+Dobiveno: 1.43156140505
+Razlika: 2.81843859495
+group of people defined by a specific profession
+organization of performers and associated personnel (especially theatrical).
+Tocno: 3.5
+Dobiveno: 0.440914134242
+Razlika: 3.05908586576
+(the content of) a communication.
+a communication (usually brief) that is written or spoken or signaled.
+Tocno: 3.75
+Dobiveno: 0.960608886416
+Razlika: 2.78939111358
+social ranking or position
+the relative position or standing of things or especially persons in a society.
+Tocno: 4.0
+Dobiveno: 0.954760681883
+Razlika: 3.04523931812
+persuade or achieve acceptance
+persuade somebody to accept something.
+Tocno: 4.333
+Dobiveno: 1.3993112396
+Razlika: 2.9336887604
+physical matter left behind after a removal process
+matter that remains after something has been removed.
+Tocno: 5.0
+Dobiveno: 1.61147697831
+Razlika: 3.38852302169
+physically inflate
+become inflated.
+Tocno: 4.75
+Dobiveno: 1.85745375113
+Razlika: 2.89254624887
+a sudden emotional vocalization
+a loud utterance of emotion (especially when inarticulate).
+Tocno: 3.75
+Dobiveno: 0.726265194513
+Razlika: 3.02373480549
+a project or undertaking
+earnest and conscientious activity intended to do or accomplish something.
+Tocno: 3.25
+Dobiveno: 0.326270308597
+Razlika: 2.9237296914
+a standardized system of measurements for heaviness
+a system of units used to express the weight of something.
+Tocno: 4.0
+Dobiveno: 1.06001347658
+Razlika: 2.93998652342
+a concern or affair
+some situation or event that is thought about.
+Tocno: 4.5
+Dobiveno: 0.308978005758
+Razlika: 4.19102199424
+head of a country
+the chief executive of a republic.
+Tocno: 4.5
+Dobiveno: 1.00211861048
+Razlika: 3.49788138952
+An authoritative text or the corresponding citation.
+a short note recognizing a source of information or of a quoted passage.
+Tocno: 3.75
+Dobiveno: 0.497906536789
+Razlika: 3.25209346321
+a measurable or quantitative decrease
+a sudden sharp decrease in some quantity.
+Tocno: 3.75
+Dobiveno: 0.897522162668
+Razlika: 2.85247783733
+a written message of nonacceptance
+a message refusing to accept something that is offered.
+Tocno: 5.0
+Dobiveno: 1.18797737485
+Razlika: 3.81202262515
+an attempt or effort to achieve a goal
+an attempt to get something.
+Tocno: 4.5
+Dobiveno: 1.53043708995
+Razlika: 2.96956291005
+a static vertical layout, e.g. text or numbers
+a vertical array of numbers or other information.
+Tocno: 4.5
+Dobiveno: 1.61723192652
+Razlika: 2.88276807348
+The act of having and controlling property.
+the state or fact of being an owner.
+Tocno: 4.25
+Dobiveno: 0
+Razlika: 4.25
+become master of, overcome, dominate
+get on top of; deal with successfully.
+Tocno: 4.0
+Dobiveno: 0.690815397014
+Razlika: 3.30918460299
+beat (as if) with a whip or rod
+strike as if by whipping.
+Tocno: 4.0
+Dobiveno: 1.18259357782
+Razlika: 2.81740642218
+a sudden, brief burst of light
+a momentary brightness.
+Tocno: 3.75
+Dobiveno: 0.627230805273
+Razlika: 3.12276919473
+a state of confinement in a small space
+the act of forcing yourself (or being forced) into or through a restricted space.
+Tocno: 4.0
+Dobiveno: 0.912847050105
+Razlika: 3.0871529499
+be against, resist
+act against or in opposition to.
+Tocno: 4.5
+Dobiveno: 0.119872990939
+Razlika: 4.38012700906
+a region allocated to hold something
+the particular portion of space occupied by something.
+Tocno: 4.5
+Dobiveno: 1.66903777966
+Razlika: 2.83096222034
+a pair of mated people, e.g., married
+a pair of people who live together.
+Tocno: 5.0
+Dobiveno: 2.1557146977
+Razlika: 2.8442853023
+(cause to) return after being refused
+come back after being refused.
+Tocno: 4.75
+Dobiveno: 1.83490141061
+Razlika: 2.91509858939
+have faith in, bet on
+have faith or confidence in.
+Tocno: 4.25
+Dobiveno: 1.39278503335
+Razlika: 2.85721496665
+a style and size of typeset
+a specific size and style of type within a type family.
+Tocno: 4.5
+Dobiveno: 1.54141088756
+Razlika: 2.95858911244
+a knapsack, bundle on the back
+a bundle (especially one carried on the back).
+Tocno: 4.75
+Dobiveno: 1.8156860009
+Razlika: 2.9343139991
+a person who delivers information or goods
+a person who conveys (carries or transmits).
+Tocno: 4.25
+Dobiveno: 1.24446077802
+Razlika: 3.00553922198
+adherence to moral principles
+adhering to moral principles.
+Tocno: 5.0
+Dobiveno: 2.1156942574
+Razlika: 2.8843057426
+have sex with
+have sexual intercourse with.
+Tocno: 5.0
+Dobiveno: 0.993113350742
+Razlika: 4.00688664926
+idolize/show devotion to
+show devotion to (a deity).
+Tocno: 4.75
+Dobiveno: 1.78508156509
+Razlika: 2.96491843491
+a long, thin implement, usually made of wood
+an implement consisting of a length of wood.
+Tocno: 4.75
+Dobiveno: 1.6740981288
+Razlika: 3.0759018712
+The state of being more than satisfied or satiated.
+the state of being more than full.
+Tocno: 4.5
+Dobiveno: 1.68838777446
+Razlika: 2.81161222554
+the state of being retained
+the act of retaining something.
+Tocno: 4.5
+Dobiveno: 0.529582897422
+Razlika: 3.97041710258
+a computer-generated visual image
+an image that is generated by a computer.
+Tocno: 5.0
+Dobiveno: 1.42851240701
+Razlika: 3.57148759299
+the act of officially gaining entrance to somewhere
+the act of admitting someone to enter.
+Tocno: 4.0
+Dobiveno: 0.759049434544
+Razlika: 3.24095056546
+the quality of dissimilarity
+the quality of being unlike or dissimilar.
+Tocno: 4.5
+Dobiveno: 1.00382343749
+Razlika: 3.49617656251
+Admit to testing/proof
+admit to testing or proof.
+Tocno: 5.0
+Dobiveno: 1.75471182415
+Razlika: 3.24528817585

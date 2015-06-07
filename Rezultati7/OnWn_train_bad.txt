@@ -1,0 +1,255 @@
+On Monday, as first reported by CNET News.com, the RIAA withdrew a DMCA notice to Penn State University's astronomy and astrophysics department.
+Last Thursday, the RIAA sent a stiff copyright warning to Penn State's department of astronomy and astrophysics.
+Tocno: 1.75
+Dobiveno: 3.55411288374
+Razlika: 1.80411288374
+Get it all out," says Howard Davidowitz, chairman of Davidowitz & Associates, a national retail consulting firm based in New York City.
+Innocent or not, "she's damaged goods," said Howard Davidowitz, chairman of Davidowitz & Associates, a national retail consulting firm in New York.
+Tocno: 1.4
+Dobiveno: 4.01164034883
+Razlika: 2.61164034883
+In 2006, the group says the market will rebound 29.6 percent to $21.3 billion in sales.
+In 2006, Asia Pacific will report growth of 7.9 percent to $81.8 billion.
+Tocno: 2.0
+Dobiveno: 3.9864997891
+Razlika: 1.9864997891
+Monkeypox is usually found only in central and western Africa.
+Prairie dogs, usually found in southwestern and western states, aren’t indigenous to Wisconsin.
+Tocno: 0.25
+Dobiveno: 2.59246980464
+Razlika: 2.34246980464
+Is it in the food supply?" says David Ropeik, director of risk communication at the Harvard Center for Risk Analysis.
+"It's not zero," said David Ropeik, director of risk communication at the Harvard Center for Risk Analysis.
+Tocno: 1.75
+Dobiveno: 4.4128056957
+Razlika: 2.6628056957
+Rusch has also allowed five or more earned runs in each of his last three starts.
+Redman has allowed two earned runs or less in six of his nine starts.
+Tocno: 2.0
+Dobiveno: 3.81552756391
+Razlika: 1.81552756391
+The company said it would cut the wholesale price of most top-line CDs to $9.09 from $12.02.
+The company also said it would cut wholesale prices on cassettes and change the suggested retail price to $8.98.
+Tocno: 1.6
+Dobiveno: 3.57083007578
+Razlika: 1.97083007578
+A key figure in former state Treasurer Paul Silvester's bribery scheme was accused Wednesday of changing his story about Silvester's alleged corrupt dealings with a Boston investment firm.
+A key player in former state Treasurer Paul Silvester's corruption scheme testified on Tuesday about kickbacks and bribes Silvester traded for state business.
+Tocno: 2.0
+Dobiveno: 3.878571168
+Razlika: 1.878571168
+Shortly after the opening bell, the Dow Jones Industrial Average was up 11.13 to 9,228.48, while the S&P 500 index gained 1.74 to 982.33.
+After a weak start, the Dow Jones Industrial Average ended the day up 26.26 to 9,217.35, while the S&P 500 index rose 3 to 980.59.
+Tocno: 1.6
+Dobiveno: 3.37649665333
+Razlika: 1.77649665333
+The commission dropped charges that Patton improperly appointed Conner to the Kentucky Lottery Board and that he improperly appointed Conner's then-husband, Seth, to the Agriculture Development Board.
+Patton also appointed Conner to the Kentucky Lottery Board and appointed Seth Conner to the Agriculture Development Board, the commission says.
+Tocno: 2.5
+Dobiveno: 4.32418308096
+Razlika: 1.82418308096
+In other markets, U.S. Treasuries started off on Monday weaker, as stocks rose early.
+In other markets, U.S. Treasuries inched higher as declining stocks raised the appeal of safe-haven debt.
+Tocno: 1.4
+Dobiveno: 3.63001255075
+Razlika: 2.23001255075
+Still, revenues from the extra premiums would not be huge.
+How would the extra premiums be collected?
+Tocno: 1.333
+Dobiveno: 3.43294451904
+Razlika: 2.09994451904
+Someone is drawing.
+Someone is dancing.
+Tocno: 0.3
+Dobiveno: 2.4553572546
+Razlika: 2.1553572546
+The man is playing the guitar.
+The girl is playing the guitar.
+Tocno: 1.6
+Dobiveno: 3.94139329263
+Razlika: 2.34139329263
+A woman is handling a frog.
+A man is holding a frog.
+Tocno: 3.75
+Dobiveno: 1.87531546302
+Razlika: 1.87468453698
+A woman is cutting a leak.
+A woman is slicing a leek.
+Tocno: 4.0
+Dobiveno: 0.809181709158
+Razlika: 3.19081829084
+Someone is pouring oil into a skillet.
+Someone is pouring milk into a blender.
+Tocno: 1.6
+Dobiveno: 3.52673814646
+Razlika: 1.92673814646
+Someone is peeling a potato.
+Someone is slicing a tomato.
+Tocno: 1.4
+Dobiveno: 3.61081545759
+Razlika: 2.21081545759
+Two people are riding a motorcycle.
+Two people are riding a bike.
+Tocno: 2.0
+Dobiveno: 4.73457946203
+Razlika: 2.73457946203
+The woman is slicing herbs.
+The man is slicing bread.
+Tocno: 1.6
+Dobiveno: 3.49587782789
+Razlika: 1.89587782789
+Three men are dancing.
+Women are dancing.
+Tocno: 1.3
+Dobiveno: 3.4726783833
+Razlika: 2.1726783833
+A person is combing a cat hair.
+A person is brushing a cat.
+Tocno: 4.4
+Dobiveno: 2.60490309329
+Razlika: 1.79509690671
+The man is playing the guitar.
+The man is playing with a skull.
+Tocno: 1.0
+Dobiveno: 3.11210837074
+Razlika: 2.11210837074
+A skateboarder does tricks on a half-pipe.
+A man skateboards on a half pipe.
+Tocno: 3.5
+Dobiveno: 1.23560665501
+Razlika: 2.26439334499
+Two men are dancing.
+Two women are shopping.
+Tocno: 0.4
+Dobiveno: 2.47088068389
+Razlika: 2.07088068389
+A person is walking down a stone path.
+A man is walking down a sidewalk.
+Tocno: 3.5
+Dobiveno: 1.59725039452
+Razlika: 1.90274960548
+A animal is eating.
+The animal is hopping.
+Tocno: 0.4
+Dobiveno: 2.79558381013
+Razlika: 2.39558381013
+A cat cleans itself.
+A cat is licking itself.
+Tocno: 3.8
+Dobiveno: 1.42958849103
+Razlika: 2.37041150897
+The woman is thinly slicing a cucumber.
+The woman is slicing a tomato.
+Tocno: 1.2
+Dobiveno: 3.72091785168
+Razlika: 2.52091785168
+A person drops a camera down an escelator.
+A man tosses a bag down an escalator.
+Tocno: 2.75
+Dobiveno: 0.409633433002
+Razlika: 2.340366567
+A woman is slicing an onion.
+A women slicing lemons.
+Tocno: 1.4
+Dobiveno: 3.30034030701
+Razlika: 1.90034030701
+A man and woman are Bollywood dancing.
+A man an woman are dancing in the rain.
+Tocno: 1.667
+Dobiveno: 3.63633086738
+Razlika: 1.96933086738
+A woman is exercising.
+A woman lifts weights.
+Tocno: 3.4
+Dobiveno: 1.00348978882
+Razlika: 2.39651021118
+A man is preparing a hanging rope.
+A man is tying a noose.
+Tocno: 4.667
+Dobiveno: 1.63130817186
+Razlika: 3.03569182814
+A man is playing the piano.
+Someone is playing guitar.
+Tocno: 0.75
+Dobiveno: 3.07683434837
+Razlika: 2.32683434837
+A man is mowing grass.
+A guy is mowing the lawn.
+Tocno: 4.8
+Dobiveno: 2.15676113794
+Razlika: 2.64323886206
+Someone is greating a carrot.
+A woman is grating an orange food.
+Tocno: 2.5
+Dobiveno: 0.574292701167
+Razlika: 1.92570729883
+A rabbit is sniffing and pawing a stuffed rabbit.
+A live rabbit is playing with a stuffed animal bunny.
+Tocno: 4.5
+Dobiveno: 2.28517690966
+Razlika: 2.21482309034
+People are walking in the garden.
+One boy is talking with other man.
+Tocno: 0.0
+Dobiveno: 1.89311504719
+Razlika: 1.89311504719
+A woman is applying cosmetics to her face.
+A woman is putting on makeup.
+Tocno: 4.6
+Dobiveno: 2.22499963406
+Razlika: 2.37500036594
+A woman rapidly fires a handgun.
+A woman is shooting off a gun.
+Tocno: 4.4
+Dobiveno: 2.2039150771
+Razlika: 2.1960849229
+Three boys in karate costumes are fighting.
+Three men are practicing karate moves in a field.
+Tocno: 1.25
+Dobiveno: 3.54499552547
+Razlika: 2.29499552547
+Women are holding each other and dancing together.
+Two men are playing table tennis.
+Tocno: 0.0
+Dobiveno: 2.41120599389
+Razlika: 2.41120599389
+A girl is dragged downhill by a dog.
+A dog is pulling a child down a hill.
+Tocno: 3.8
+Dobiveno: 1.68885159634
+Razlika: 2.11114840366
+The man is using a sledghammer to break the concrete block that is on the other man.
+A man breaks a slab of concrete that is lying on a prone man with a sledge hammer.
+Tocno: 5.0
+Dobiveno: 3.22329482258
+Razlika: 1.77670517742
+A little girl plays the violin on a beach.
+The girl sat on the couch to crochet.
+Tocno: 0.0
+Dobiveno: 1.82895463558
+Razlika: 1.82895463558
+A monkey is karate kicking at someone's gloved hand.
+A monkey pratices martial arts.
+Tocno: 3.5
+Dobiveno: 0.989477214415
+Razlika: 2.51052278558
+Those who stand apart from reinforced cooperation are really being given the same freedom as the back seat passengers in a car.
+Those who refuse and enjoy the same freedom of movement as the passengers out of a car.
+Tocno: 1.8
+Dobiveno: 3.63009740609
+Razlika: 1.83009740609
+I stress this point because the market cannot regulate everything, which is why competition is not completely unrestricted, nor should it be.
+I stress this because the market cannot solve all and that, accordingly, there is not and cannot have competition without limits.
+Tocno: 3.8
+Dobiveno: 1.75637168252
+Razlika: 2.04362831748
+I stress this point because the market cannot regulate everything, which is why competition is not completely unrestricted, nor should it be.
+I stress this because the market cannot solve all and that, in this sense, there is no cannot be competitive without limits.
+Tocno: 4.2
+Dobiveno: 1.23060545095
+Razlika: 2.96939454905
+He saw a red rose.
+He drove a rose colored car.
+Tocno: 0.8
+Dobiveno: 3.31163688592
+Razlika: 2.51163688592
