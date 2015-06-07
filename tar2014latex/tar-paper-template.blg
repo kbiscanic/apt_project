@@ -1,6 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: tar-paper-template.aux
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tar-paper-template.aux
 The style file: tar2014.bst
 Database file #1: tar2014.bib
-Warning--I didn't find a database entry for "literatura1"
-Warning--I didn't find a database entry for "literatura2"
-(There were 2 warnings)
+You've used 8 entries,
+            2490 wiz_defined-function locations,
+            594 strings with 5991 characters,
+and the built_in function-call counts, 3642 in all, are:
+= -- 394
+> -- 131
+< -- 4
++ -- 44
+- -- 44
+* -- 248
+:= -- 559
+add.period$ -- 36
+call.type$ -- 8
+change.case$ -- 54
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 158
+empty$ -- 285
+format.name$ -- 54
+if$ -- 795
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 6
+newline$ -- 51
+num.names$ -- 24
+pop$ -- 72
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 131
+stack$ -- 0
+substring$ -- 185
+swap$ -- 54
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 0
+while$ -- 31
+width$ -- 10
+write$ -- 116

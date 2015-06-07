@@ -1,3 +1,66 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citename{Agirre \bgroup et al.\egroup
+  }2012]{agirre2012semeval}
+Eneko Agirre, Daniel Cer, Mona Diaba, and Aitor Gonzalez-Agirre.
+\newblock 2012.
+\newblock Semeval-2012 task 6: A pilot on semantic textual similarity.
+\newblock In {\em Proceedings of the First Joint Conference on Lexical and
+  Computational Semantics-Volume 1: Proceedings of the main conference and the
+  shared task, and Volume 2: Proceedings of the Sixth International Workshop on
+  Semantic Evaluation}, pages 385--393. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citename{Bird}2006]{bird2006nltk}
+Steven Bird.
+\newblock 2006.
+\newblock Nltk: the natural language toolkit.
+\newblock In {\em Proceedings of the COLING/ACL on Interactive presentation
+  sessions}, pages 69--72. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Budanitsky and Hirst}2006]{budanitsky2006evaluating}
+Alexander Budanitsky and Graeme Hirst.
+\newblock 2006.
+\newblock Evaluating wordnet-based measures of lexical semantic relatedness.
+\newblock {\em Computational Linguistics}, 32(1):13--47.
+
+\bibitem[\protect\citename{Chang and Lin}2011]{chang2011libsvm}
+Chih-Chung Chang and Chih-Jen Lin.
+\newblock 2011.
+\newblock Libsvm: a library for support vector machines.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
+  2(3):27.
+
+\bibitem[\protect\citename{Lin \bgroup et al.\egroup }2012]{lin2012syntactic}
+Yuri Lin, Jean-Baptiste Michel, Erez~Lieberman Aiden, Jon Orwant, Will
+  Brockman, and Slav Petrov.
+\newblock 2012.
+\newblock Syntactic annotations for the google books ngram corpus.
+\newblock In {\em Proceedings of the ACL 2012 system demonstrations}, pages
+  169--174. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{{\v{S}}ari{\'c} \bgroup et al.\egroup
+  }2012]{vsaric2012takelab}
+Frane {\v{S}}ari{\'c}, Goran Glava{\v{s}}, Mladen Karan, Jan {\v{S}}najder, and
+  Bojana~Dalbelo Ba{\v{s}}i{\'c}.
+\newblock 2012.
+\newblock Takelab: Systems for measuring semantic text similarity.
+\newblock In {\em Proceedings of the First Joint Conference on Lexical and
+  Computational Semantics-Volume 1: Proceedings of the main conference and the
+  shared task, and Volume 2: Proceedings of the Sixth International Workshop on
+  Semantic Evaluation}, pages 385--393. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citename{SemEval}2015]{semeval_web}
+SemEval.
+\newblock 2015.
+\newblock Semeval-2015 task 2: Semantic textual similarity.
+\newblock [Online; accessed 7-June-2015].
+
+\bibitem[\protect\citename{Wikipedia}2015]{wiki_semantic}
+Wikipedia.
+\newblock 2015.
+\newblock Semantic similarity --- wikipedia{,} the free encyclopedia.
+\newblock [Online; accessed 7-June-2015].
+
 \end{thebibliography}
