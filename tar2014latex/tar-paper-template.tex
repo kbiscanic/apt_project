@@ -126,8 +126,7 @@ Set & Pearson & Spearman & $C$ & $g$ & $p$ \\
 
 \subsection{Test Set Results}
 
-We evaluated our model using Pearson and Spearman correlation coefficients.
-The performance on test sets is shown in Table~\ref{tab:test-results-table}.
+We evaluated our model using Pearson and Spearman correlation coefficients. The performance on test sets is shown in Table~\ref{tab:test-results-table}. Aggregate performance according to three aggregate evaluation measures proposed in \citep{literatura2} are shown in Table~\ref{tab:all-results-table}.
 
 TODO - na kakvim vrstama primjera failamo i zakaj?
 
@@ -149,6 +148,23 @@ Set & Pearson & Spearman \\
 \end{tabular}
 \end{center}
 \end{table}
+
+\begin{table}[H]
+\caption{Aggregate performance on test sets}
+\label{tab:all-results-table}
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+& Pearson & Spearman \\
+\midrule
+\textit{ALL} & 1.0000 & 1.0000 \\
+\textit{ALLnrm} & 1.0000 & 1.0000 \\
+\textit{Mean} & 1.0000 & 1.0000 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
 
 \section{Conclusion and Future Work}
 
