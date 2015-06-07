@@ -107,7 +107,24 @@ Finally, the weighted word overlap is calculated as a harmonic mean of the $wwc(
 
 \subsection{Normalized differences}
 
+Normalized difference for two integers $a$ and $b$ is calculated as
+\begin{equation}
+	ND(a, b) = \frac{|a - b|}{\max \{a, b\}}.
+\end{equation}
+In our system, we use two types of normalized differences. The first one takes as input sentence lengths, while the second one uses aggregate information content of the words in sentences.
 
+\subsection{Numbers overlap}
+
+Inspired by
+%TODO \citep{Socher et al. (2011)}
+, we decided to compute few features which will represent numbers overlap. To begin, we need to extract the numbers from each sentence in separate sets $N_1$ and $N_2$.
+The features we observe are computed as follows:
+\begin{align}
+	NO^{(1)} &= \ln (1+|N_1|+|N_2|) \\
+	NO^{(2)} &= \frac{2 |N_1 \cap N_2|}{|N_1| + |N_2|} \\
+	NO^{(3)} &= (N_1 \subset N_2) \vee (N_2 \subset N_1)
+\end{align}
+As proposed in \citep{vsaric2012takelab}, numbers that differ only in the number of decimal places are treated as equal.
 
 \section{Results}
 
