@@ -66,6 +66,16 @@ SemEval.
 \newblock Semeval-2015 task 2: Semantic textual similarity.
 \newblock [Online; accessed 7-June-2015].
 
+\bibitem[\protect\citename{Socher \bgroup et al.\egroup
+  }2011]{socher2011dynamic}
+Richard Socher, Eric~H Huang, Jeffrey Pennin, Christopher~D Manning, and
+  Andrew~Y Ng.
+\newblock 2011.
+\newblock Dynamic pooling and unfolding recursive autoencoders for paraphrase
+  detection.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  801--809.
+
 \bibitem[\protect\citename{Wikipedia}2015]{wiki_semantic}
 Wikipedia.
 \newblock 2015.
