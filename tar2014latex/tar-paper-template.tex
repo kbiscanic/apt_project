@@ -115,8 +115,7 @@ In our system, we use two types of normalized differences. The first one takes a
 
 \subsection{Numbers overlap}
 
-Inspired by
-%TODO \citep{Socher et al. (2011)}
+Inspired by \citep{socher2011dynamic}
 , we decided to compute few features which will represent numbers overlap. To begin, we need to extract the numbers from each sentence in separate sets $N_1$ and $N_2$.
 The features we observe are computed as follows:
 \begin{align}
@@ -179,9 +178,9 @@ TODO - koji su dobri/losi featurei?
 \toprule
 Set & Pearson & Spearman & $C$ & $\gamma$ & $\epsilon$ \\
 \midrule
-\textit{MSRvid} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
-\textit{MSRpar} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
-\textit{SMTeuroparl} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
+\textit{MSRvid} & 0.8924 & 0.8894 & 64 & 0.25 & 0.4 \\
+\textit{MSRpar} & 0.7398 & 0.6663 & 32768 & 0.00049 & 0.6 \\
+\textit{SMTeuroparl} & 0.8191 & 0.6713 & 16 & 0.25 & 0.05 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -199,11 +198,11 @@ We evaluated our model using Pearson and Spearman correlation coefficients. The 
 \toprule
 Set & Pearson & Spearman \\
 \midrule
-\textit{MSRvid} & 1.0000 & 1.0000 \\
-\textit{MSRpar} & 1.0000 & 1.0000 \\
-\textit{SMTeuroparl} & 1.0000 & 1.0000 \\
-\textit{SMTnews} & 1.0000 & 1.0000 \\
-\textit{OnWN} & 1.0000 & 1.0000 \\
+\textit{MSRvid} & 0.87926 & 0.87531 \\
+\textit{MSRpar} & 0.66632 & 0.64689 \\
+\textit{SMTeuroparl} & 0.37214 & 0.40216 \\
+\textit{SMTnews} & 0.54115 & 0.28306 \\
+\textit{OnWN} & 0.69060 & 0.66542 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -217,9 +216,9 @@ Set & Pearson & Spearman \\
 \toprule
 & Pearson & Spearman \\
 \midrule
-\textit{ALL} & 1.0000 & 1.0000 \\
-\textit{ALLnrm} & 1.0000 & 1.0000 \\
-\textit{Mean} & 1.0000 & 1.0000 \\
+\textit{ALL} & 0.79688 & 0.76381\\
+\textit{ALLnrm} & 0.86295 & 0.79843 \\
+\textit{Mean} & 0.67035 & 0.62363 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -240,9 +239,11 @@ In order to analyse situations in which our system most likely fails, during eve
 
 \section{Conclusion and Future Work}
 
-In this paper we presented our system for assessing the semantic textual similarity between two short texts based on machine learning. 
+In this paper we presented our system for assessing the semantic textual similarity between two short texts based on machine learning. This system was designed as a solution to the Text Analysis and Retrieval project assignment. The whole system was written in Python, utilizing several libraries such as NLTK, NumPy, scikit-learn and LIBSVM. Training and testing of the system was done on datasets from the SemEval-2012 Semantic Textual Similarity Task. Performance of the system was evaluated using Pearson and Spearman correlations with human similarity judgements and, according to our scores, would be ranked 4th on the said competition.
 
-TODO
+System is performing very well on three of five test sets and there is plenty of room for improvement. There certainly exist features that could be implemented and would possibly improve performance of this system. Some of these features are full NERC, syntactic roles similarity, syntactic dependencies overlap, greedy lemma aligning overlap, semantic role labelling, etc.
+
+It could also be possible to obtain better results using current features by using larger grid for more detailed grid search but it would be very computationally expensive and it would take several times more time to train a model on the same dataset.
 
 \nocite{*}
 \bibliographystyle{tar2014}
