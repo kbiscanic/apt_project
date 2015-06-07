@@ -109,19 +109,18 @@ Finally, the weighted word overlap is calculated as a harmonic mean of the $wwc(
 
 Normalized difference for two integers $a$ and $b$ is calculated as
 \begin{equation}
-	ND(a, b) = \frac{|a - b|}{\max \{a, b\}}.
+	nd(a, b) = \frac{|a - b|}{\max \{a, b\}}.
 \end{equation}
 In our system, we use two types of normalized differences. The first one takes as input sentence lengths, while the second one uses aggregate information content of the words in sentences.
 
 \subsection{Numbers overlap}
 
-Inspired by \citep{socher2011dynamic}
-, we decided to compute few features which will represent numbers overlap. To begin, we need to extract the numbers from each sentence in separate sets $N_1$ and $N_2$.
+Inspired by \citep{socher2011dynamic}, we decided to compute few features which will represent numbers overlap. To begin, we need to extract the numbers from each sentence in separate sets $N_1$ and $N_2$.
 The features we observe are computed as follows:
 \begin{align}
-	NO^{(1)} &= \ln (1+|N_1|+|N_2|) \\
-	NO^{(2)} &= \frac{2 |N_1 \cap N_2|}{|N_1| + |N_2|} \\
-	NO^{(3)} &= (N_1 \subset N_2) \vee (N_2 \subset N_1)
+	no^{(1)} &= \ln (1+|N_1|+|N_2|) \\
+	no^{(2)} &= \frac{2 |N_1 \cap N_2|}{|N_1| + |N_2|} \\
+	no^{(3)} &= (N_1 \subset N_2) \vee (N_2 \subset N_1)
 \end{align}
 As proposed in \citep{vsaric2012takelab}, numbers that differ only in the number of decimal places are treated as equal.
 
@@ -145,7 +144,7 @@ We represent each sentence in the vector space as a single vector $u$. $u$ is ca
 \begin{equation}
 u(S) = \sum_{w \in S} \textbf{x}_w
 \end{equation}
-$\textbf{x}_w$ is a word vector taken from pre-trained vectors file published by Google trained on part of Google News dataset. After calculating the representations of both sentences we define our feature as:
+$\textbf{x}_w$ is a word vector taken from pre-trained word vectors file that was trained by \textit{word2vec} tool for computing continuous distributed representation of words on part of Google News dataset. After calculating the representations of both sentences we define our feature as:
 \begin{equation}
 vsss(S_1, S_2) = |\cos(u(S_1), u(S_2))|
 \end{equation}

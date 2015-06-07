@@ -45,5 +45,5 @@ ys = ["STS.gs.MSRpar.txt", "STS.gs.MSRvid.txt", "STS.gs.SMTeuroparl.txt", "STS.g
       "STS.gs.surprise.SMTnews.txt"]
 
 for i in range(len(xs)):
-    tran_file("/home/karlo/PycharmProjects/apt_project/Rezultati7/" + xs[i],
+    tran_file("/home/karlo/PycharmProjects/apt_project/Rezultati9/" + xs[i],
               "/home/karlo/PycharmProjects/apt_project/data/test-gold/" + ys[i])

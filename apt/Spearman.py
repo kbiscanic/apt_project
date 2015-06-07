@@ -25,12 +25,12 @@ ys_test = ["STS.gs.MSRpar.txt", "STS.gs.MSRvid.txt", "STS.gs.SMTeuroparl.txt", "
            "STS.gs.surprise.SMTnews.txt"]
 
 for i in range(len(xs_train)):
-    sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati7/" + xs_train[i],
+    sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati9/" + xs_train[i],
             "/home/karlo/PycharmProjects/apt_project/data/train/" + ys_train[i])
-    sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati7/" + xs_test[i],
+    sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati9/" + xs_test[i],
             "/home/karlo/PycharmProjects/apt_project/data/test-gold/" + ys_test[i])
 
-sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati7/All_test.out",
+sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati9/All_test.out",
         "/home/karlo/PycharmProjects/apt_project/data/test-gold/STS.gs.ALL.txt")
-sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati7/All_test_norm.out",
+sp_file("/home/karlo/PycharmProjects/apt_project/Rezultati9/All_test_norm.out",
         "/home/karlo/PycharmProjects/apt_project/data/test-gold/STS.gs.ALL.txt")
