@@ -139,7 +139,7 @@ score(w, S) = \left\{
 \end{array}
 \right.
 \end{equation}
-$sim(w, w')$ represents the WordNet path length similarity of words $w$ and $w'$. We use this feature to find unigram overlap between sentences that are semantically similar but don't use exactly the same words. We are using WordNet to assign partial scores these words and thus allowing for some lexical variation.
+$sim(w, w')$ represents the WordNet path length similarity of words $w$ and $w'$. We use this feature to find unigram overlap between sentences that are semantically similar but don't use exactly the same words. We are using WordNet to assign partial scores to these words and thus allowing for some lexical variation.
 
 \subsection{Vector Space Sentence Similarity}
 We represent each sentence in the vector space as a single vector $u$. $u$ is calculated by summing the LSA vector of each word in the sentence:
@@ -151,7 +151,7 @@ $\textbf{x}_w$ is a word vector taken from pre-trained vectors file published by
 vsss(S_1, S_2) = |\cos(u(S_1), u(S_2))|
 \end{equation}
 
-Another similar vector space representation $u_W$ uses the information content $ic(w)$ of LSA vector in the following way:
+Another similar vector space representation $u_W$ uses the information content $ic(w)$ to weigh LSA vector in the following way:
 \begin{equation}
 u_W(S) = \sum_{w \in S} ic(w)\textbf{x}_w
 \end{equation}
