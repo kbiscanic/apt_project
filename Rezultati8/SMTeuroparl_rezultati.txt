@@ -1,0 +1,6 @@
+C: 256
+epsilon: 0.1
+gamma: 0.0625
+
+Pearson (train):
+Pearson (test): 
