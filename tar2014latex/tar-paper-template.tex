@@ -126,6 +126,43 @@ The features we observe are computed as follows:
 \end{align}
 As proposed in \citep{vsaric2012takelab}, numbers that differ only in the number of decimal places are treated as equal.
 
+\subsection{WordNet-Augmented Word Overlap}
+The \textit{WordNet-augmented word overlap} feature is defined as a harmonic mean of \textit{WordNet-augmented coverages} $P_{WN}(S_1, S_2)$ and $P_{WN}(S_2, S_1)$. $P_{WN}(S_1, S_2)$ is computed as:
+\begin{equation}
+P_{WN}(S_1, S_2) = \dfrac{1}{|S_2|}\sum_{w \in S_1}score(w, S_2)
+\end{equation}
+\begin{equation}
+score(w, S) = \left\{
+\begin{array}{ll}
+1 & \mbox{if } w \in S \\
+\underset{w' \in S}{\max} \: sim(w, w') & \mbox{otherwise}
+\end{array}
+\right.
+\end{equation}
+$sim(w, w')$ represents the WordNet path length similarity of words $w$ and $w'$. We use this feature to find unigram overlap between sentences that are semantically similar but don't use exactly the same words. We are using WordNet to assign partial scores these words and thus allowing for some lexical variation.
+
+\subsection{Vector Space Sentence Similarity}
+We represent each sentence in the vector space as a single vector $u$. $u$ is calculated by summing the LSA vector of each word in the sentence:
+\begin{equation}
+u(S) = \sum_{w \in S} \textbf{x}_w
+\end{equation}
+$\textbf{x}_w$ is a word vector taken from pre-trained vectors file published by Google trained on part of Google News dataset. After calculating the representations of both sentences we define our feature as:
+\begin{equation}
+vsss(S_1, S_2) = |\cos(u(S_1), u(S_2))|
+\end{equation}
+
+Another similar vector space representation $u_W$ uses the information content $ic(w)$ of LSA vector in the following way:
+\begin{equation}
+u_W(S) = \sum_{w \in S} ic(w)\textbf{x}_w
+\end{equation}
+We define the second feature as:
+\begin{equation}
+vsss'(S_1, S_2) = |\cos(u_W(S_1), u_W(S_2))|
+\end{equation}
+
+\subsection{Shallow Named Entity Recognizer and Classifier}
+Shallow named entity recognizer and classifier treats every capitalized word as a named entity if it is longer than one character and classifies every word written in all caps and begging with a period as a stock index symbol. Our system uses four features associated with named entities: the overlap of named entities, the feature indicating if named entities were found in either of the sentences, the overlap of stock index symbols and the feature indicating if stock index symbols were found in either of the sentences.
+
 \section{Results}
 
 \subsection{Model Training}
