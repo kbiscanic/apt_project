@@ -55,7 +55,7 @@ The main task of the system is to compute certain features which act as a repres
 
 % short overview of the field: similar algorithms and systems
 
-Semantic textual similarity is discussed at length in \citep{literatura1}. The system described there directly inspired the implementation of our system.
+Semantic textual similarity is discussed at length in \citep{vsaric2012takelab}. The system described there directly inspired the implementation of our system.
 
 TODO - jos?
 
@@ -118,7 +118,6 @@ Set & Pearson & Spearman & $C$ & $g$ & $p$ \\
 \textit{MSRvid} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
 \textit{MSRpar} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
 \textit{SMTeuroparl} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
-\textit{All} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -126,8 +125,7 @@ Set & Pearson & Spearman & $C$ & $g$ & $p$ \\
 
 \subsection{Test Set Results}
 
-We evaluated our model using Pearson and Spearman correlation coefficients.
-The performance on test sets is shown in Table~\ref{tab:test-results-table}.
+We evaluated our model using Pearson and Spearman correlation coefficients. The performance on test sets is shown in Table~\ref{tab:test-results-table}. Aggregate performance according to three aggregate evaluation measures proposed in \citep{agirre2012semeval} are shown in Table~\ref{tab:all-results-table}.
 
 TODO - na kakvim vrstama primjera failamo i zakaj?
 
@@ -144,7 +142,22 @@ Set & Pearson & Spearman \\
 \textit{SMTeuroparl} & 1.0000 & 1.0000 \\
 \textit{SMTnews} & 1.0000 & 1.0000 \\
 \textit{OnSw} & 1.0000 & 1.0000 \\
-\textit{All} & 1.0000 & 1.0000 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\caption{Aggregate performance on test sets}
+\label{tab:all-results-table}
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+& Pearson & Spearman \\
+\midrule
+\textit{ALL} & 1.0000 & 1.0000 \\
+\textit{ALLnrm} & 1.0000 & 1.0000 \\
+\textit{Mean} & 1.0000 & 1.0000 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -156,6 +169,7 @@ In this paper we presented our system for assessing the semantic textual similar
 
 TODO
 
+\nocite{*}
 \bibliographystyle{tar2014}
 \bibliography{tar2014} 
 
