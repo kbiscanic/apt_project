@@ -2,5 +2,8 @@ C: 4
 epsilon: 0.25
 gamma: 1
 
-Pearson (train):
-Pearson (test): 
+Pearson (train): 0.89458
+Pearson (test): 0.69060
+
+Spearman (train): 0.84425
+Spearman (test): 0.66542
