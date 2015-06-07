@@ -1,0 +1,255 @@
+restrict or confine
+place limits on (extent or access).
+Tocno: 4.75
+Dobiveno: 0.859787410357
+Razlika: 3.89021258964
+Bring back to life, return from the dead
+cause to become alive again.
+Tocno: 4.75
+Dobiveno: 0.510005983365
+Razlika: 4.23999401663
+an interpretation, an account or reading of an event or situation
+a mental representation of the meaning or significance of something.
+Tocno: 3.5
+Dobiveno: 0.497827491541
+Razlika: 3.00217250846
+festive social event, celebration
+an occasion on which people can assemble for social interaction and entertainment.
+Tocno: 4.25
+Dobiveno: 1.37140174845
+Razlika: 2.87859825155
+a short lyric or poem intended to be sung
+a narrative song with a recurrent refrain.
+Tocno: 3.75
+Dobiveno: 1.06392510381
+Razlika: 2.68607489619
+group of people defined by a specific profession
+organization of performers and associated personnel (especially theatrical).
+Tocno: 3.5
+Dobiveno: 0.394416767757
+Razlika: 3.10558323224
+(the content of) a communication.
+a communication (usually brief) that is written or spoken or signaled.
+Tocno: 3.75
+Dobiveno: 1.0668918936
+Razlika: 2.6831081064
+social ranking or position
+the relative position or standing of things or especially persons in a society.
+Tocno: 4.0
+Dobiveno: 0.992485436272
+Razlika: 3.00751456373
+persuade or achieve acceptance
+persuade somebody to accept something.
+Tocno: 4.333
+Dobiveno: 1.39409680213
+Razlika: 2.93890319787
+physical matter left behind after a removal process
+matter that remains after something has been removed.
+Tocno: 5.0
+Dobiveno: 1.57564568988
+Razlika: 3.42435431012
+physically inflate
+become inflated.
+Tocno: 4.75
+Dobiveno: 1.66348898001
+Razlika: 3.08651101999
+a sudden emotional vocalization
+a loud utterance of emotion (especially when inarticulate).
+Tocno: 3.75
+Dobiveno: 0.673085868428
+Razlika: 3.07691413157
+a project or undertaking
+earnest and conscientious activity intended to do or accomplish something.
+Tocno: 3.25
+Dobiveno: 0.398013659501
+Razlika: 2.8519863405
+a standardized system of measurements for heaviness
+a system of units used to express the weight of something.
+Tocno: 4.0
+Dobiveno: 1.02985757401
+Razlika: 2.97014242599
+a concern or affair
+some situation or event that is thought about.
+Tocno: 4.5
+Dobiveno: 0.276501471527
+Razlika: 4.22349852847
+head of a country
+the chief executive of a republic.
+Tocno: 4.5
+Dobiveno: 0.933797167869
+Razlika: 3.56620283213
+an evaluation, an estimation of worth, a grade
+a number or letter indicating quality (especially of a student's performance).
+Tocno: 3.0
+Dobiveno: 0.294417951369
+Razlika: 2.70558204863
+An authoritative text or the corresponding citation.
+a short note recognizing a source of information or of a quoted passage.
+Tocno: 3.75
+Dobiveno: 0.448702438832
+Razlika: 3.30129756117
+a social gesture of deferential greeting
+a courteous expression (by word or deed) of esteem or regard.
+Tocno: 3.4
+Dobiveno: 0.622296087519
+Razlika: 2.77770391248
+a measurable or quantitative decrease
+a sudden sharp decrease in some quantity.
+Tocno: 3.75
+Dobiveno: 0.860613037712
+Razlika: 2.88938696229
+a written message of nonacceptance
+a message refusing to accept something that is offered.
+Tocno: 5.0
+Dobiveno: 1.12539980037
+Razlika: 3.87460019963
+an attempt or effort to achieve a goal
+an attempt to get something.
+Tocno: 4.5
+Dobiveno: 1.51616193341
+Razlika: 2.98383806659
+a static vertical layout, e.g. text or numbers
+a vertical array of numbers or other information.
+Tocno: 4.5
+Dobiveno: 1.69014382929
+Razlika: 2.80985617071
+a home furnishing that is a fabric cover
+bedclothes consisting of a lightweight cloth covering (an afghan or bedspread) that is casually thrown over something.
+Tocno: 3.75
+Dobiveno: 0.965719634519
+Razlika: 2.78428036548
+meshed frame over windows and doors
+a protective covering consisting of netting; can be mounted in a frame.
+Tocno: 3.5
+Dobiveno: 0.733109579809
+Razlika: 2.76689042019
+The act of having and controlling property.
+the state or fact of being an owner.
+Tocno: 4.25
+Dobiveno: 0
+Razlika: 4.25
+become master of, overcome, dominate
+get on top of; deal with successfully.
+Tocno: 4.0
+Dobiveno: 0.630581635276
+Razlika: 3.36941836472
+rescue, redeem, deliver from harm or danger
+refrain from harming.
+Tocno: 3.4
+Dobiveno: 0.649054463597
+Razlika: 2.7509455364
+beat (as if) with a whip or rod
+strike as if by whipping.
+Tocno: 4.0
+Dobiveno: 1.07581269036
+Razlika: 2.92418730964
+a sudden, brief burst of light
+a momentary brightness.
+Tocno: 3.75
+Dobiveno: 0.591087432785
+Razlika: 3.15891256722
+a state of confinement in a small space
+the act of forcing yourself (or being forced) into or through a restricted space.
+Tocno: 4.0
+Dobiveno: 0.887206017328
+Razlika: 3.11279398267
+be against, resist
+act against or in opposition to.
+Tocno: 4.5
+Dobiveno: 0.14581672518
+Razlika: 4.35418327482
+a region allocated to hold something
+the particular portion of space occupied by something.
+Tocno: 4.5
+Dobiveno: 1.59001772646
+Razlika: 2.90998227354
+a pair of mated people, e.g., married
+a pair of people who live together.
+Tocno: 5.0
+Dobiveno: 2.23580708349
+Razlika: 2.76419291651
+(cause to) return after being refused
+come back after being refused.
+Tocno: 4.75
+Dobiveno: 1.88085838806
+Razlika: 2.86914161194
+have faith in, bet on
+have faith or confidence in.
+Tocno: 4.25
+Dobiveno: 1.43488008389
+Razlika: 2.81511991611
+a style and size of typeset
+a specific size and style of type within a type family.
+Tocno: 4.5
+Dobiveno: 1.57436785023
+Razlika: 2.92563214977
+a knapsack, bundle on the back
+a bundle (especially one carried on the back).
+Tocno: 4.75
+Dobiveno: 1.98068048094
+Razlika: 2.76931951906
+a person who delivers information or goods
+a person who conveys (carries or transmits).
+Tocno: 4.25
+Dobiveno: 1.23193097934
+Razlika: 3.01806902066
+adherence to moral principles
+adhering to moral principles.
+Tocno: 5.0
+Dobiveno: 2.04479649802
+Razlika: 2.95520350198
+have sex with
+have sexual intercourse with.
+Tocno: 5.0
+Dobiveno: 1.1493048889
+Razlika: 3.8506951111
+idolize/show devotion to
+show devotion to (a deity).
+Tocno: 4.75
+Dobiveno: 2.06863569678
+Razlika: 2.68136430322
+a state of social order in conformance with existing law
+a state of order in which events conform to the law.
+Tocno: 5.0
+Dobiveno: 2.38678726715
+Razlika: 2.61321273285
+a long, thin implement, usually made of wood
+an implement consisting of a length of wood.
+Tocno: 4.75
+Dobiveno: 1.78978354744
+Razlika: 2.96021645256
+The state of being more than satisfied or satiated.
+the state of being more than full.
+Tocno: 4.5
+Dobiveno: 1.84748788426
+Razlika: 2.65251211574
+the state of being retained
+the act of retaining something.
+Tocno: 4.5
+Dobiveno: 0.503939195855
+Razlika: 3.99606080414
+a computer-generated visual image
+an image that is generated by a computer.
+Tocno: 5.0
+Dobiveno: 1.44432187529
+Razlika: 3.55567812471
+the act of officially gaining entrance to somewhere
+the act of admitting someone to enter.
+Tocno: 4.0
+Dobiveno: 0.786563091705
+Razlika: 3.21343690829
+the quality of dissimilarity
+the quality of being unlike or dissimilar.
+Tocno: 4.5
+Dobiveno: 0.941045189128
+Razlika: 3.55895481087
+destruction of a ship
+destroy a ship.
+Tocno: 5.0
+Dobiveno: 2.29249443886
+Razlika: 2.70750556114
+Admit to testing/proof
+admit to testing or proof.
+Tocno: 5.0
+Dobiveno: 1.95756948677
+Razlika: 3.04243051323
