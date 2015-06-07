@@ -46,10 +46,10 @@ def w2v_model_load():
     global w2v_model
     global w2v_dimension
     if w2v_model is None:
-        w2v_model = Word2Vec.load_word2vec_format("features/karlo/GoogleNews-vectors-negative300.bin", binary=True)
-        w2v_dimension = 300
-        # w2v_model = Word2Vec.load_word2vec_format("features/karlo/vectors.6B.50d.txt", binary=False)
-
+        # w2v_model = Word2Vec.load_word2vec_format("features/karlo/GoogleNews-vectors-negative300.bin", binary=True)
+        #w2v_dimension = 300
+        w2v_model = Word2Vec.load_word2vec_format("features/karlo/vectors.6B.50d.txt", binary=False)
+        w2v_dimension = 50
 
 def w2v_model_unload():
     global w2v_model

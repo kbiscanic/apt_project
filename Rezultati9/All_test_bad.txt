@@ -1,0 +1,255 @@
+"It's going to happen," said Jim Santangelo, president of the Teamsters Joint Council 42 in El Monte.
+"That really affects the companies, big time," said Jim Santangelo, president of the Teamsters Joint Council 42 in El Monte.
+Tocno: 1.5
+Dobiveno: 4.20629775784
+Razlika: 2.70629775784
+A kangroo is eating something.
+A kangaroo is eating.
+Tocno: 4.8
+Dobiveno: 0.405746885345
+Razlika: 4.39425311466
+A woman is resting in a floating raft.
+A woman relaxes in an inner tube.
+Tocno: 3.8
+Dobiveno: 0.846621018641
+Razlika: 2.95337898136
+The lady peeled the potatoe.
+A woman is peeling a potato.
+Tocno: 4.75
+Dobiveno: 0.577114305682
+Razlika: 4.17288569432
+A woman puts cosmetics on her eyelid.
+The woman is pencilling on eye shadow.
+Tocno: 4.0
+Dobiveno: 0.832101433565
+Razlika: 3.16789856643
+I am one of those Members who attends sittings quite faithfully.
+I belong to the Members who are present rather honourably.
+Tocno: 4.25
+Dobiveno: 1.36959960167
+Razlika: 2.88040039833
+I am one of those Members who attends sittings quite faithfully.
+I am part of the parliamentary ones that are rather present honorably.
+Tocno: 4.0
+Dobiveno: 1.10335604173
+Razlika: 2.89664395827
+I am one of those Members who attends sittings quite faithfully.
+I am part of parliamentarians who are rather present honourably.
+Tocno: 4.0
+Dobiveno: 0.942259597369
+Razlika: 3.05774040263
+Other ways are needed.
+Other means should be found.
+Tocno: 4.6
+Dobiveno: 1.72292658715
+Razlika: 2.87707341285
+This tendency extends deeper than headscarves.
+This trend goes well beyond simple scarves.
+Tocno: 4.5
+Dobiveno: 1.42599554414
+Razlika: 3.07400445586
+Tocqueville believed that there are no effective long-term constraints on this tendency.
+Tocqueville thought in the long run, nothing can be really opposed this trend.
+Tocno: 4.5
+Dobiveno: 1.76331582372
+Razlika: 2.73668417628
+Being a Muslim and being an Islamist are not the same thing.
+It is necessary to are two different things.
+Tocno: 0.25
+Dobiveno: 3.02263122689
+Razlika: 2.77263122689
+This tendency extends deeper than headscarves.
+This trend goes well beyond simple scarves.
+Tocno: 4.5
+Dobiveno: 1.42599554414
+Razlika: 3.07400445586
+Other ways are needed.
+Other means should be found.
+Tocno: 4.6
+Dobiveno: 1.72292658715
+Razlika: 2.87707341285
+But they were necessary.
+But they were needed.
+Tocno: 5.0
+Dobiveno: 2.18687232704
+Razlika: 2.81312767296
+This tendency extends deeper than headscarves.
+This trend goes well beyond simple scarves.
+Tocno: 4.5
+Dobiveno: 1.42599554414
+Razlika: 3.07400445586
+restrict or confine
+place limits on (extent or access).
+Tocno: 4.75
+Dobiveno: 0.760763723535
+Razlika: 3.98923627647
+Bring back to life, return from the dead
+cause to become alive again.
+Tocno: 4.75
+Dobiveno: 1.42856883261
+Razlika: 3.32143116739
+festive social event, celebration
+an occasion on which people can assemble for social interaction and entertainment.
+Tocno: 4.25
+Dobiveno: 1.33860088635
+Razlika: 2.91139911365
+persuade or achieve acceptance
+persuade somebody to accept something.
+Tocno: 4.333
+Dobiveno: 1.40853349515
+Razlika: 2.92446650485
+physical matter left behind after a removal process
+matter that remains after something has been removed.
+Tocno: 5.0
+Dobiveno: 1.80129618816
+Razlika: 3.19870381184
+physically inflate
+become inflated.
+Tocno: 4.75
+Dobiveno: 1.72697950175
+Razlika: 3.02302049825
+a sudden emotional vocalization
+a loud utterance of emotion (especially when inarticulate).
+Tocno: 3.75
+Dobiveno: 0.686798471376
+Razlika: 3.06320152862
+a standardized system of measurements for heaviness
+a system of units used to express the weight of something.
+Tocno: 4.0
+Dobiveno: 0.55069287148
+Razlika: 3.44930712852
+a concern or affair
+some situation or event that is thought about.
+Tocno: 4.5
+Dobiveno: 0.676729847246
+Razlika: 3.82327015275
+head of a country
+the chief executive of a republic.
+Tocno: 4.5
+Dobiveno: 1.41214964883
+Razlika: 3.08785035117
+An authoritative text or the corresponding citation.
+a short note recognizing a source of information or of a quoted passage.
+Tocno: 3.75
+Dobiveno: 0.71141988493
+Razlika: 3.03858011507
+a measurable or quantitative decrease
+a sudden sharp decrease in some quantity.
+Tocno: 3.75
+Dobiveno: 0.802242002959
+Razlika: 2.94775799704
+a written message of nonacceptance
+a message refusing to accept something that is offered.
+Tocno: 5.0
+Dobiveno: 1.12230615923
+Razlika: 3.87769384077
+an attempt or effort to achieve a goal
+an attempt to get something.
+Tocno: 4.5
+Dobiveno: 1.36562372398
+Razlika: 3.13437627602
+The act of having and controlling property.
+the state or fact of being an owner.
+Tocno: 4.25
+Dobiveno: 0.491516532289
+Razlika: 3.75848346771
+beat (as if) with a whip or rod
+strike as if by whipping.
+Tocno: 4.0
+Dobiveno: 0.889041940952
+Razlika: 3.11095805905
+the medical procedure of manually turning the uterus
+manual turning of a fetus in the uterus (usually to aid delivery).
+Tocno: 4.4
+Dobiveno: 1.68220116773
+Razlika: 2.71779883227
+a sudden, brief burst of light
+a momentary brightness.
+Tocno: 3.75
+Dobiveno: 0.275507167782
+Razlika: 3.47449283222
+be against, resist
+act against or in opposition to.
+Tocno: 4.5
+Dobiveno: 0.255053524844
+Razlika: 4.24494647516
+a pair of mated people, e.g., married
+a pair of people who live together.
+Tocno: 5.0
+Dobiveno: 2.19843790856
+Razlika: 2.80156209144
+(cause to) return after being refused
+come back after being refused.
+Tocno: 4.75
+Dobiveno: 1.84894607614
+Razlika: 2.90105392386
+have faith in, bet on
+have faith or confidence in.
+Tocno: 4.25
+Dobiveno: 1.29169024991
+Razlika: 2.95830975009
+a style and size of typeset
+a specific size and style of type within a type family.
+Tocno: 4.5
+Dobiveno: 1.70923965943
+Razlika: 2.79076034057
+a knapsack, bundle on the back
+a bundle (especially one carried on the back).
+Tocno: 4.75
+Dobiveno: 1.72057884586
+Razlika: 3.02942115414
+a person who delivers information or goods
+a person who conveys (carries or transmits).
+Tocno: 4.25
+Dobiveno: 1.06487030147
+Razlika: 3.18512969853
+adherence to moral principles
+adhering to moral principles.
+Tocno: 5.0
+Dobiveno: 1.98255985307
+Razlika: 3.01744014693
+have sex with
+have sexual intercourse with.
+Tocno: 5.0
+Dobiveno: 0.855921294615
+Razlika: 4.14407870538
+idolize/show devotion to
+show devotion to (a deity).
+Tocno: 4.75
+Dobiveno: 2.02389603575
+Razlika: 2.72610396425
+a state of social order in conformance with existing law
+a state of order in which events conform to the law.
+Tocno: 5.0
+Dobiveno: 2.25464688531
+Razlika: 2.74535311469
+a long, thin implement, usually made of wood
+an implement consisting of a length of wood.
+Tocno: 4.75
+Dobiveno: 1.79202293508
+Razlika: 2.95797706492
+the state of being retained
+the act of retaining something.
+Tocno: 4.5
+Dobiveno: 1.02382187597
+Razlika: 3.47617812403
+a computer-generated visual image
+an image that is generated by a computer.
+Tocno: 5.0
+Dobiveno: 1.7274811912
+Razlika: 3.2725188088
+the act of officially gaining entrance to somewhere
+the act of admitting someone to enter.
+Tocno: 4.0
+Dobiveno: 0.788228884642
+Razlika: 3.21177111536
+the quality of dissimilarity
+the quality of being unlike or dissimilar.
+Tocno: 4.5
+Dobiveno: 0.608497748338
+Razlika: 3.89150225166
+destruction of a ship
+destroy a ship.
+Tocno: 5.0
+Dobiveno: 2.15536778766
+Razlika: 2.84463221234
