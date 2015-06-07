@@ -39,6 +39,15 @@ Yuri Lin, Jean-Baptiste Michel, Erez~Lieberman Aiden, Jon Orwant, Will
 \newblock In {\em Proceedings of the ACL 2012 system demonstrations}, pages
   169--174. Association for Computational Linguistics.
 
+\bibitem[\protect\citename{Michel \bgroup et al.\egroup
+  }2011]{michel2011quantitative}
+Jean-Baptiste Michel, Yuan~Kui Shen, Aviva~Presser Aiden, Adrian Veres,
+  Matthew~K. Gray, Joseph~P. Pickett, Dale Hoiberg, Dan Clancy, Peter Norviq,
+  Join Orwant, et~al.
+\newblock 2011.
+\newblock Quantitative analysis of culture using millions of digitized books.
+\newblock {\em science}, 331(6014):176--182.
+
 \bibitem[\protect\citename{{\v{S}}ari{\'c} \bgroup et al.\egroup
   }2012]{vsaric2012takelab}
 Frane {\v{S}}ari{\'c}, Goran Glava{\v{s}}, Mladen Karan, Jan {\v{S}}najder, and

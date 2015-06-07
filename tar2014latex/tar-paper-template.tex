@@ -46,7 +46,7 @@ Semantic similarity is a metric defined over a set of documents or terms, where 
 
 We have implemented a system that can measure the semantic similarity between two sentences whose context is previously unknown and of no matter to us. The idea of building such system comes from the necessity of automated similarity estimating in a number of study fields such as biomedical informatics, geoinformatics, linguistics and natural language processing (NLP).
 
-The main task of the system is to compute certain features which act as a representation of sentence similarity. Each sentence is first preprocessed and then we compute various features from them. Exact features used are: ngram overlap, WordNet-augmented overlap, weighted word overlap, vector-space similarity, 2 types of normalized differences, shallow NERC and numbers overlap. Calculation of the features will be briefly described in forthcoming sections. These features are used as an input to a support vector regression (SVR) model. The model is being hyper-optimized by grid search over different values of hyper-parameters: regularization cost parameter $C$, RBF precision $\gamma$ and penalty threshold $\epsilon$. On it's output, the model gives us the similarity judgement based on the features extracted. The similarity is scored as a real number from 0 to 5, where 0 represents no similarity, while 5 represents maximum similarity. Model estimations are compared with human judgements, and the accuracy of the model is measured using Pearson and Spearman correlation coefficients.
+The main task of the system is to compute certain features which act as a representation of sentence similarity. Each sentence is first preprocessed and then we compute various features from them. Exact features used are: ngram overlap, WordNet-augmented overlap, weighted word overlap, vector-space similarity, 2 types of normalized differences, shallow NERC and numbers overlap. Calculation of the features will be briefly described in forthcoming sections. These features are used as an input to a support vector regression (SVR) model. The model is being hyper-optimized by grid search over different values of hyper-parameters: regularization cost parameter $C$, RBF precision $\gamma$ and penalty threshold $\epsilon$. On its output, the model gives us the similarity judgement based on the features extracted. The similarity is scored as a real number from 0 to 5, where 0 represents no similarity, while 5 represents maximum similarity. Model estimations are compared with human judgements, and the accuracy of the model is measured using Pearson and Spearman correlation coefficients.
 
 \section{Overview of the field}
 
@@ -89,9 +89,42 @@ First we compute $S_1$ and $S_2$, sets of consecutive ngrams from first and seco
 
 Our system uses overlap scores based on unigrams, bigrams and trigrams. We calculated the overlap on both regular words and lemmas.
 
-\subsection{Ostali featurei}
+\subsection{Weighted word overlap}
 
-valjda ce stat svi? smijemo imat max 3 strane bez referenci
+First, for every word $w$ in corpus $C$ we have to compute its information content $ic$ using the following equation:
+\begin{equation}
+	ic(w) = \ln \frac{\sum_{w' \in C} freq(w')}{freq(w)}
+\end{equation}
+where $freq(w)$ is the word frequency that we obtain indirectly from Google Books Ngrams, whose coverage for English is extremely good. \citep{michel2011quantitative}
+
+Then, we introduce the weighted word coverage of the second sentence by the first one, which is calculated using the following equation:
+\begin{equation}
+	wwc(S_1, S_2) = \frac{\sum_{w \in S_1 \cap S_2} ic(w)}{\sum_{w \in S_2} ic(w)}
+\end{equation}
+where $S_1$ and $S_2$ are sets of words appearing in the sentences.
+
+Finally, the weighted word overlap is calculated as a harmonic mean of the $wwc(S_1,S_2)$ and $wwc(S_2,S_1)$.
+
+\subsection{Normalized differences}
+
+Normalized difference for two integers $a$ and $b$ is calculated as
+\begin{equation}
+	ND(a, b) = \frac{|a - b|}{\max \{a, b\}}.
+\end{equation}
+In our system, we use two types of normalized differences. The first one takes as input sentence lengths, while the second one uses aggregate information content of the words in sentences.
+
+\subsection{Numbers overlap}
+
+Inspired by
+%TODO \citep{Socher et al. (2011)}
+, we decided to compute few features which will represent numbers overlap. To begin, we need to extract the numbers from each sentence in separate sets $N_1$ and $N_2$.
+The features we observe are computed as follows:
+\begin{align}
+	NO^{(1)} &= \ln (1+|N_1|+|N_2|) \\
+	NO^{(2)} &= \frac{2 |N_1 \cap N_2|}{|N_1| + |N_2|} \\
+	NO^{(3)} &= (N_1 \subset N_2) \vee (N_2 \subset N_1)
+\end{align}
+As proposed in \citep{vsaric2012takelab}, numbers that differ only in the number of decimal places are treated as equal.
 
 \section{Results}
 
@@ -161,9 +194,9 @@ Set & Pearson & Spearman \\
 In order to analyse situations in which our system most likely fails, during every testing phase we created a file containing sentence pairs for which our model prediction and human judgement mostly differ. We discovered that there are few specific kinds of problems that we didn't manage to successfully overcome.
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-	\item If there are many words shared among sentences, but without much semantic similarity in contexts of these words, our system will predict the similarity score that is much bigger than expected. This kind of sentence pairs especially appear in \textit{MSRpar} and \textit{SMTeuroparl} datasets.
+	\item If there are many words shared among sentences, but without much semantic similarity in contexts of these words, our system will predict the similarity score that is much bigger than expected. This kind of sentence pairs especially appear in \textit{MSRpar} and \textit{SMTeuroparl} datasets. To solve this problem we should try to add more features describing semantic relationships between words, rather than their individual meanings.
 	
-	\item On the other hand, if the sentences are semantically almost the same, but the words used in the sentences are not equal, our system will predict the score much lower than expected. This problem is most often present in \textit{MSRvid} dataset.
+	\item On the other hand, if the sentences are semantically almost the same, but the words used in the sentences are not equal, our system will predict the score much lower than expected. This problem is most often present in \textit{MSRvid} dataset. The approach that would give us better results when it comes to this kind of situations could consist of removing some features that focus directly on comparing word equality and add other ones that take into account their semantic meaning.
 	
 	\item Next interesting category of sentence pairs that cause our system to misjudge are pairs in which one sentence starts with another one and then adds some additional information. The result of this situation is that our system predicts the similarity score  severely lower than what it should be. This kind of sentences appear mostly in \textit{MSRvid} dataset.
 \end{itemize}
