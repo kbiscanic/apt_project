@@ -1,0 +1,255 @@
+A man is riding a bicycle.
+A man is riding a bike.
+Tocno: 5.0
+Dobiveno: 3.32254938059
+Razlika: 1.67745061941
+A man and a woman are kissing each other.
+A man and a woman are talking to each other.
+Tocno: 0.6
+Dobiveno: 2.26452605441
+Razlika: 1.66452605441
+A woman is handling a frog.
+A man is holding a frog.
+Tocno: 3.75
+Dobiveno: 1.7267954016
+Razlika: 2.0232045984
+A cat is drinking milk.
+A kitten is drinking milk.
+Tocno: 4.0
+Dobiveno: 2.34986374647
+Razlika: 1.65013625353
+A turtle is walking.
+A tortoise is walking.
+Tocno: 4.4
+Dobiveno: 2.55341713215
+Razlika: 1.84658286785
+Someone is boiling okra in a pot.
+Someone is cooking okra in a pan.
+Tocno: 4.4
+Dobiveno: 2.2802796076
+Razlika: 2.1197203924
+A woman is cutting a leak.
+A woman is slicing a leek.
+Tocno: 4.0
+Dobiveno: 0.726535999584
+Razlika: 3.27346400042
+A woman is climbing a cliff.
+A woman is climbing a rock face.
+Tocno: 4.5
+Dobiveno: 2.61171541555
+Razlika: 1.88828458445
+A man walking down the stairs.
+A man walks down a staircase.
+Tocno: 5.0
+Dobiveno: 3.27103898311
+Razlika: 1.72896101689
+A person is combing a cat hair.
+A person is brushing a cat.
+Tocno: 4.4
+Dobiveno: 2.58906055334
+Razlika: 1.81093944666
+The man is playing the guitar.
+The man is playing with a skull.
+Tocno: 1.0
+Dobiveno: 2.58513303531
+Razlika: 1.58513303531
+A man plays a guitar.
+A woman is playing guitar.
+Tocno: 2.0
+Dobiveno: 3.41873645256
+Razlika: 1.41873645256
+A skateboarder does tricks on a half-pipe.
+A man skateboards on a half pipe.
+Tocno: 3.5
+Dobiveno: 0.372978524546
+Razlika: 3.12702147545
+A lion cub tries to climb a fence.
+A lion tries to climb over a wall.
+Tocno: 2.75
+Dobiveno: 4.32475738227
+Razlika: 1.57475738227
+A person is walking down a stone path.
+A man is walking down a sidewalk.
+Tocno: 3.5
+Dobiveno: 1.44536770911
+Razlika: 2.05463229089
+A man is playing guitar.
+A cat is playing.
+Tocno: 0.4
+Dobiveno: 1.99653856107
+Razlika: 1.59653856107
+A animal is eating.
+The animal is hopping.
+Tocno: 0.4
+Dobiveno: 2.87424156145
+Razlika: 2.47424156145
+A cat cleans itself.
+A cat is licking itself.
+Tocno: 3.8
+Dobiveno: 1.54263816898
+Razlika: 2.25736183102
+A woman opens a window.
+A woman is looking out a window.
+Tocno: 2.0
+Dobiveno: 3.79255865225
+Razlika: 1.79255865225
+A woman is slicing a big pepper.
+A person is cutting a green pepper.
+Tocno: 3.4
+Dobiveno: 1.638451768
+Razlika: 1.761548232
+A cat is playing.
+A woman is playing flute.
+Tocno: 0.25
+Dobiveno: 1.97394103026
+Razlika: 1.72394103026
+A person drops a camera down an escelator.
+A man tosses a bag down an escalator.
+Tocno: 2.75
+Dobiveno: 0.150538160702
+Razlika: 2.5994618393
+A woman is slicing an onion.
+A women slicing lemons.
+Tocno: 1.4
+Dobiveno: 3.31015123268
+Razlika: 1.91015123268
+A man and woman are Bollywood dancing.
+A man an woman are dancing in the rain.
+Tocno: 1.667
+Dobiveno: 3.69042224718
+Razlika: 2.02342224718
+A woman is exercising.
+A woman lifts weights.
+Tocno: 3.4
+Dobiveno: 1.28990788641
+Razlika: 2.11009211359
+A man is preparing a hanging rope.
+A man is tying a noose.
+Tocno: 4.667
+Dobiveno: 1.38155429212
+Razlika: 3.28544570788
+A woman is mixing eggs.
+The woman is eating.
+Tocno: 0.5
+Dobiveno: 2.21946050626
+Razlika: 1.71946050626
+A man is playing the piano.
+Someone is playing guitar.
+Tocno: 0.75
+Dobiveno: 2.70458002632
+Razlika: 1.95458002632
+A man is mowing grass.
+A guy is mowing the lawn.
+Tocno: 4.8
+Dobiveno: 1.99500283862
+Razlika: 2.80499716138
+A man is riding on one wheel on a motorcycle.
+A person is performing tricks on a motorcycle.
+Tocno: 3.0
+Dobiveno: 1.47750967144
+Razlika: 1.52249032856
+Someone is greating a carrot.
+A woman is grating an orange food.
+Tocno: 2.5
+Dobiveno: 0.181932652597
+Razlika: 2.3180673474
+A man is playing the trumpet.
+Someone is playing with a toad.
+Tocno: 0.8
+Dobiveno: 2.35035348
+Razlika: 1.55035348
+A rabbit is sniffing and pawing a stuffed rabbit.
+A live rabbit is playing with a stuffed animal bunny.
+Tocno: 4.5
+Dobiveno: 1.96138581944
+Razlika: 2.53861418056
+A monkey is karate kicking a person.
+A monkey pratices martial arts.
+Tocno: 2.5
+Dobiveno: 0.996619426473
+Razlika: 1.50338057353
+A man is taking out the insides of a green pepper.
+Someone is removing the seeds from a bell pepper.
+Tocno: 4.0
+Dobiveno: 2.43927216334
+Razlika: 1.56072783666
+The man is talking.
+A man is walking down stairs.
+Tocno: 0.4
+Dobiveno: 1.91665009982
+Razlika: 1.51665009982
+A woman is applying cosmetics to her face.
+A woman is putting on makeup.
+Tocno: 4.6
+Dobiveno: 2.00722256303
+Razlika: 2.59277743697
+A cat gets stuck on a moving ceiling fan.
+A cat is swinging on a fan.
+Tocno: 4.2
+Dobiveno: 2.6431538882
+Razlika: 1.5568461118
+A person is chopping an herb.
+A man is finely chopping a green substance.
+Tocno: 3.0
+Dobiveno: 1.42949912826
+Razlika: 1.57050087174
+A woman rapidly fires a handgun.
+A woman is shooting off a gun.
+Tocno: 4.4
+Dobiveno: 1.89059015744
+Razlika: 2.50940984256
+A man is carrying another man on his back.
+A man is taking pictures of ant.
+Tocno: 0.4
+Dobiveno: 2.20468963658
+Razlika: 1.80468963658
+A slow loris bites a persons fingers.
+A small animal is chewing on a finger.
+Tocno: 2.5
+Dobiveno: 0.828699607382
+Razlika: 1.67130039262
+A cat and a ferret are playing.
+A ferret and kitten play together.
+Tocno: 4.25
+Dobiveno: 2.34737096158
+Razlika: 1.90262903842
+A lady mixed up a meat mixture in bowl.
+A woman is stirring meat in a bowl.
+Tocno: 4.0
+Dobiveno: 2.43616754302
+Razlika: 1.56383245698
+Someone is scratching an animals belly.
+A woman is stroking a lemur.
+Tocno: 2.0
+Dobiveno: 0.23827984279
+Razlika: 1.76172015721
+A dog knocks a boy into the water twice.
+A dog pushes a toddler into a rain puddle.
+Tocno: 2.692
+Dobiveno: 1.09721986378
+Razlika: 1.59478013622
+The bird is taking a bath under the faucet.
+A bird is bathing in a sink.
+Tocno: 4.429
+Dobiveno: 2.7125683455
+Razlika: 1.7164316545
+A girl is dragged downhill by a dog.
+A dog is pulling a child down a hill.
+Tocno: 3.8
+Dobiveno: 1.56412777642
+Razlika: 2.23587222358
+The man is using a sledghammer to break the concrete block that is on the other man.
+A man breaks a slab of concrete that is lying on a prone man with a sledge hammer.
+Tocno: 5.0
+Dobiveno: 2.74097028658
+Razlika: 2.25902971342
+A panda bear is laying down.
+A baby panda relaxes on some logs.
+Tocno: 3.333
+Dobiveno: 1.32101432665
+Razlika: 2.01198567335
+A monkey is karate kicking at someone's gloved hand.
+A monkey pratices martial arts.
+Tocno: 3.5
+Dobiveno: 0.752224462895
+Razlika: 2.7477755371
