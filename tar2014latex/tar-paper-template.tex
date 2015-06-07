@@ -121,8 +121,6 @@ Set & Pearson & Spearman & $C$ & $\gamma$ & $\epsilon$ \\
 
 We evaluated our model using Pearson and Spearman correlation coefficients. The performance on test sets is shown in Table~\ref{tab:test-results-table}. Aggregate performance according to three aggregate evaluation measures proposed in \citep{agirre2012semeval} are shown in Table~\ref{tab:all-results-table}.
 
-TODO - na kakvim vrstama primjera failamo i zakaj?
-
 \begin{table}[h]
 \caption{Performance on test sets}
 \label{tab:test-results-table}
@@ -156,6 +154,19 @@ Set & Pearson & Spearman \\
 \end{tabular}
 \end{center}
 \end{table}
+
+
+\subsection{Error analysis}
+
+In order to analyse situations in which our system most likely fails, during every testing phase we created a file containing sentence pairs for which our model prediction and human judgement mostly differ. We discovered that there are few specific kinds of problems that we didn't manage to successfully overcome.
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item If there are many words shared among sentences, but without much semantic similarity in contexts of these words, our system will predict the similarity score that is much bigger than expected. This kind of sentence pairs especially appear in \textit{MSRpar} and \textit{SMTeuroparl} datasets.
+	
+	\item On the other hand, if the sentences are semantically almost the same, but the words used in the sentences are not equal, our system will predict the score much lower than expected. This problem is most often present in \textit{MSRvid} dataset.
+	
+	\item Next interesting category of sentence pairs that cause our system to misjudge are pairs in which one sentence starts with another one and then adds some additional information. The result of this situation is that our system predicts the similarity score  severely lower than what it should be. This kind of sentences appear mostly in \textit{MSRvid} dataset.
+\end{itemize}
 
 \section{Conclusion and Future Work}
 
