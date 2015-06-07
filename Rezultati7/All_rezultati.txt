@@ -1,6 +1,7 @@
-C: 4
-epsilon: 0.25
-gamma: 1
+Pearson: 0.79688
+Pearson norm: 0.86295
+Pearson mean: 0.67035
 
-Pearson (train):
-Pearson (test): 
+Spearman: 0.76381
+Spearman norm: 0.79843
+Spearman mean: 0.62363
