@@ -1,0 +1,255 @@
+A man and a woman are kissing each other.
+A man and a woman are talking to each other.
+Tocno: 0.6
+Dobiveno: 2.04666997681
+Razlika: 1.44666997681
+A woman is stabbing a potato with a fork.
+A woman is puncturing a potato with a fork.
+Tocno: 5.0
+Dobiveno: 3.26707965235
+Razlika: 1.73292034765
+A woman is handling a frog.
+A man is holding a frog.
+Tocno: 3.75
+Dobiveno: 1.90063694969
+Razlika: 1.84936305031
+A cat is drinking milk.
+A kitten is drinking milk.
+Tocno: 4.0
+Dobiveno: 2.29337413177
+Razlika: 1.70662586823
+A turtle is walking.
+A tortoise is walking.
+Tocno: 4.4
+Dobiveno: 2.75584077809
+Razlika: 1.64415922191
+A man is cutting an onion.
+A man is cutting a plantain.
+Tocno: 3.667
+Dobiveno: 2.24366307207
+Razlika: 1.42333692793
+Someone is boiling okra in a pot.
+Someone is cooking okra in a pan.
+Tocno: 4.4
+Dobiveno: 2.35211595353
+Razlika: 2.04788404647
+A woman is cutting a leak.
+A woman is slicing a leek.
+Tocno: 4.0
+Dobiveno: 0.755775325137
+Razlika: 3.24422467486
+The man is playing a guitar.
+A baby is playing a guitar.
+Tocno: 1.8
+Dobiveno: 3.23335175599
+Razlika: 1.43335175599
+A woman is climbing a cliff.
+A woman is climbing a rock face.
+Tocno: 4.5
+Dobiveno: 2.75559024171
+Razlika: 1.74440975829
+A man is playing two pianos.
+A cat is playing a piano.
+Tocno: 1.6
+Dobiveno: 3.09506178913
+Razlika: 1.49506178913
+A man is pouring rice a roni into a pan.
+A man poured ric-a-roni into a pan.
+Tocno: 3.8
+Dobiveno: 2.34203815968
+Razlika: 1.45796184032
+Two men are fighting in a cow pasture.
+Two men are fighting in a cattle pen.
+Tocno: 4.0
+Dobiveno: 2.57504737913
+Razlika: 1.42495262087
+A man walking down the stairs.
+A man walks down a staircase.
+Tocno: 5.0
+Dobiveno: 3.42269103385
+Razlika: 1.57730896615
+A person is combing a cat hair.
+A person is brushing a cat.
+Tocno: 4.4
+Dobiveno: 2.56947939219
+Razlika: 1.83052060781
+The lady put the baby int a trashcan.
+A woman puts a baby in a trash can.
+Tocno: 5.0
+Dobiveno: 3.50291959074
+Razlika: 1.49708040926
+A skateboarder does tricks on a half-pipe.
+A man skateboards on a half pipe.
+Tocno: 3.5
+Dobiveno: 1.0658245537
+Razlika: 2.4341754463
+A person is walking down a stone path.
+A man is walking down a sidewalk.
+Tocno: 3.5
+Dobiveno: 1.6158207813
+Razlika: 1.8841792187
+A man is playing guitar.
+A cat is playing.
+Tocno: 0.4
+Dobiveno: 1.97203128335
+Razlika: 1.57203128335
+A animal is eating.
+The animal is hopping.
+Tocno: 0.4
+Dobiveno: 2.55631091296
+Razlika: 2.15631091296
+A man is lifting weights.
+A man is lifting a barbell.
+Tocno: 4.2
+Dobiveno: 2.64490064419
+Razlika: 1.55509935581
+A cat cleans itself.
+A cat is licking itself.
+Tocno: 3.8
+Dobiveno: 1.59616427628
+Razlika: 2.20383572372
+A woman opens a window.
+A woman is looking out a window.
+Tocno: 2.0
+Dobiveno: 3.74539727681
+Razlika: 1.74539727681
+A woman is slicing a big pepper.
+A person is cutting a green pepper.
+Tocno: 3.4
+Dobiveno: 1.93030356131
+Razlika: 1.46969643869
+A cat is playing.
+A woman is playing flute.
+Tocno: 0.25
+Dobiveno: 1.95712453524
+Razlika: 1.70712453524
+A person drops a camera down an escelator.
+A man tosses a bag down an escalator.
+Tocno: 2.75
+Dobiveno: 0.461206868886
+Razlika: 2.28879313111
+A woman is slicing an onion.
+A women slicing lemons.
+Tocno: 1.4
+Dobiveno: 3.25613465836
+Razlika: 1.85613465836
+A man and woman are Bollywood dancing.
+A man an woman are dancing in the rain.
+Tocno: 1.667
+Dobiveno: 3.28512019722
+Razlika: 1.61812019722
+A woman is exercising.
+A woman lifts weights.
+Tocno: 3.4
+Dobiveno: 1.14996540929
+Razlika: 2.25003459071
+The woman droppped eggplant into the pan.
+A woman puts chopped eggplant into a skillet.
+Tocno: 4.0
+Dobiveno: 2.51027233502
+Razlika: 1.48972766498
+A man is preparing a hanging rope.
+A man is tying a noose.
+Tocno: 4.667
+Dobiveno: 1.61106001741
+Razlika: 3.05593998259
+A woman is mixing eggs.
+The woman is eating.
+Tocno: 0.5
+Dobiveno: 1.93632137022
+Razlika: 1.43632137022
+A person is adding oil in the pan.
+The cook pouring oil into the pan.
+Tocno: 4.25
+Dobiveno: 2.68955040791
+Razlika: 1.56044959209
+A man is playing the piano.
+Someone is playing guitar.
+Tocno: 0.75
+Dobiveno: 2.60454381068
+Razlika: 1.85454381068
+A man is mowing grass.
+A guy is mowing the lawn.
+Tocno: 4.8
+Dobiveno: 2.15689947636
+Razlika: 2.64310052364
+Someone is greating a carrot.
+A woman is grating an orange food.
+Tocno: 2.5
+Dobiveno: 0.397237429474
+Razlika: 2.10276257053
+A rabbit is sniffing and pawing a stuffed rabbit.
+A live rabbit is playing with a stuffed animal bunny.
+Tocno: 4.5
+Dobiveno: 2.30309547024
+Razlika: 2.19690452976
+A monkey is karate kicking a person.
+A monkey pratices martial arts.
+Tocno: 2.5
+Dobiveno: 0.999744521006
+Razlika: 1.50025547899
+A man is taking out the insides of a green pepper.
+Someone is removing the seeds from a bell pepper.
+Tocno: 4.0
+Dobiveno: 2.24776138003
+Razlika: 1.75223861997
+A woman is applying cosmetics to her face.
+A woman is putting on makeup.
+Tocno: 4.6
+Dobiveno: 2.18681146239
+Razlika: 2.41318853761
+A person is adding chili powder to chili with beans.
+The man is adding seasoning to the beans.
+Tocno: 3.8
+Dobiveno: 2.07046580622
+Razlika: 1.72953419378
+A woman rapidly fires a handgun.
+A woman is shooting off a gun.
+Tocno: 4.4
+Dobiveno: 2.35703620028
+Razlika: 2.04296379972
+A cat and a ferret are playing.
+A ferret and kitten play together.
+Tocno: 4.25
+Dobiveno: 2.74687929429
+Razlika: 1.50312070571
+A dog knocks a boy into the water twice.
+A dog pushes a toddler into a rain puddle.
+Tocno: 2.692
+Dobiveno: 1.23874777339
+Razlika: 1.45325222661
+The bird is taking a bath under the faucet.
+A bird is bathing in a sink.
+Tocno: 4.429
+Dobiveno: 2.63704956241
+Razlika: 1.79195043759
+A man is coming out into the water.
+A man rises from a swamp.
+Tocno: 3.2
+Dobiveno: 1.71684759123
+Razlika: 1.48315240877
+A girl is dragged downhill by a dog.
+A dog is pulling a child down a hill.
+Tocno: 3.8
+Dobiveno: 1.64574572528
+Razlika: 2.15425427472
+The man is using a sledghammer to break the concrete block that is on the other man.
+A man breaks a slab of concrete that is lying on a prone man with a sledge hammer.
+Tocno: 5.0
+Dobiveno: 2.78077943473
+Razlika: 2.21922056527
+The lady put the dried noodles in the hot water to cook.
+A woman places a container of noodles in a pan of water.
+Tocno: 4.333
+Dobiveno: 2.7397342909
+Razlika: 1.5932657091
+The doctor was helping the patient.
+Doctors are trying to revive a man.
+Tocno: 2.8
+Dobiveno: 1.29771206973
+Razlika: 1.50228793027
+A monkey is karate kicking at someone's gloved hand.
+A monkey pratices martial arts.
+Tocno: 3.5
+Dobiveno: 1.27044397254
+Razlika: 2.22955602746

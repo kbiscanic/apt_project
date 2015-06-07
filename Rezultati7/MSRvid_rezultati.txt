@@ -1,6 +1,6 @@
-C:
-epsilon:
-gamma:
+C: 64
+epsilon: 0.4
+gamma: 0.25
 
 Pearson (train):
 Pearson (test):
