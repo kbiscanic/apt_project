@@ -97,7 +97,7 @@ valjda ce stat svi? smijemo imat max 3 strane bez referenci
 
 \subsection{Model Training}
 
-We used LIBSVM \citep{chang2011libsvm} to train a separate SVR model for each training set. The model was hyper-optimized by grid search with nested cross-validation (in terms of Pearson correlation) to find the optimal parameters $C$, $g$ and $p$. Final prediction results are then trimmed to a 0-5 interval. For the surprise test set SMTnews we trained our system on SMTeuroparl train set, and for the OnWN test set we trained the system on the union of all provided train sets. The performance on train sets is shown in Table~\ref{tab:train-results-table}.
+We used LIBSVM \citep{chang2011libsvm} to train a separate SVR model for each training set. The model was hyper-optimized (in terms of Pearson correlation) by grid search with nested cross-validation ($k=10$) to find the optimal parameters $C$, $g$ and $p$. Final prediction results are then trimmed to a 0-5 interval. For the surprise test set SMTnews we trained our system on SMTeuroparl train set, and for the OnWN test set we trained the system on the union of all provided train sets. The performance on train sets is shown in Table~\ref{tab:train-results-table}.
 
 TODO - koji su dobri/losi featurei?
 
