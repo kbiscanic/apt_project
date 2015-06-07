@@ -42,25 +42,19 @@ This paper focuses on building a system that can assess the semantic similarity 
 
 % This is the second paragraph of the introduction. Paragraphs are in \LaTeX separated by inserting an empty line in between them.  Avoid very large paragraphs (larger than half of the page height) but also avoid tiny paragraphs (e.g., one-sentence paragraphs).
 
-Semantic similarity is a metric defined over a set of documents or terms, where the idea of distance between them is based on likeness of their meaning or semantic content as opposed to similarity which can be estimated regarding their syntactical representation. 
-%TODO ref http://en.wikipedia.org/wiki/Semantic_similarity
+Semantic similarity is a metric defined over a set of documents or terms, where the idea of distance between them is based on likeness of their meaning or semantic content as opposed to similarity which can be estimated regarding their syntactical representation \citep{wiki_semantic}.
+
 We have implemented a system that can measure the semantic similarity between two sentences whose context is previously unknown and of no matter to us. The idea of building such system comes from the necessity of automated similarity estimating in a number of study fields such as biomedical informatics, geoinformatics, linguistics and natural language processing (NLP).
 
-The main task of the system is to compute certain features which act as a representation of sentence similarity. The features are being computed from preprocessed sentences. Preprocessing is done kako?... Exact features used are: ngram overlap, WordNet-augmented overlap, weighted word overlap, vector-space similarity, 2 types of normalized differences, shallow NERC and numbers overlap. Calculation of the features will be briefly described in forthcoming sections. These features are used as an input to a support vector regression model. The model is being hyper-optimized by grid search over different values of regularization factor, nesto i nesto. On it's output, the model gives us the similarity judgement based on the features extracted. The similarity is scored as a real number from 0 to 5, where 0 represents no similarity, while 5 represents maximum similarity. Model estimations are compared with human judgements, and the accuracy of the model is measured using Pearson and Spearman correlation coefficients.
-
-%TODO jagarov komentar - ja stvarno mislim da je ovo u 2. dijelu uvoda predetaljno,
-% "Introduction should not be too elaborate, that is what other sections are for"
+The main task of the system is to compute certain features which act as a representation of sentence similarity. Each sentence is first preprocessed and then we compute various features from them. Exact features used are: ngram overlap, WordNet-augmented overlap, weighted word overlap, vector-space similarity, 2 types of normalized differences, shallow NERC and numbers overlap. Calculation of the features will be briefly described in forthcoming sections. These features are used as an input to a support vector regression (SVR) model. The model is being hyper-optimized by grid search over different values of hyper-parameters $C$, $\gamma$, $\epsilon$. On it's output, the model gives us the similarity judgement based on the features extracted. The similarity is scored as a real number from 0 to 5, where 0 represents no similarity, while 5 represents maximum similarity. Model estimations are compared with human judgements, and the accuracy of the model is measured using Pearson and Spearman correlation coefficients.
 
 \section{Overview of the field}
 
 % short overview of the field: similar algorithms and systems
 
-Semantic textual similarity is discussed at length in \citep{vsaric2012takelab}. The system described there directly inspired the implementation of our system.
+Semantic textual similarity is an interesting field with an increasing interest in recent years. Various systems and algorithms are submitted in recent years for the Semeval/*SEM tasks organized in 2012, 2013 and 2014, with more than 60 participating teams \citep{semeval_web}. We designed our system for the SemEval-2012 Task 6 \citep{agirre2012semeval}.
 
-TODO - jos?
-
-TODO - glupo citiranje ne radi jer je retardirani latex odlucio izbrisat mojih mukotrpnih sat vremena posla
-
+One implementation of similar system is discussed at length in \citep{vsaric2012takelab}. The system described there directly inspired the implementation of our system.
 
 \section{Description of the System}
 
@@ -103,7 +97,7 @@ valjda ce stat svi? smijemo imat max 3 strane bez referenci
 
 \subsection{Model Training}
 
-We used LIBSVM to train a separate SVR model for each training set. The model was hyper-optimized by grid search with nested cross-validation (in terms of Pearson correlation) to find the optimal parameters $C$, $g$ and $p$. Final prediction results are then trimmed to a 0-5 interval. For the surprise test set SMTnews we trained our system on SMTeuroparl train set, and for the OnSw test set we trained the system on the union of all provided train sets. The performance on train sets is shown in Table~\ref{tab:train-results-table}.
+We used LIBSVM \citep{chang2011libsvm} to train a separate SVR model for each training set. The model was hyper-optimized by grid search with nested cross-validation (in terms of Pearson correlation) to find the optimal parameters $C$, $g$ and $p$. Final prediction results are then trimmed to a 0-5 interval. For the surprise test set SMTnews we trained our system on SMTeuroparl train set, and for the OnWN test set we trained the system on the union of all provided train sets. The performance on train sets is shown in Table~\ref{tab:train-results-table}.
 
 TODO - koji su dobri/losi featurei?
 
@@ -113,7 +107,7 @@ TODO - koji su dobri/losi featurei?
 \begin{center}
 \begin{tabular}{cccccc}
 \toprule
-Set & Pearson & Spearman & $C$ & $g$ & $p$ \\
+Set & Pearson & Spearman & $C$ & $\gamma$ & $\epsilon$ \\
 \midrule
 \textit{MSRvid} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
 \textit{MSRpar} & 1.0000 & 1.0000 & 1 & 1 & 1 \\
@@ -141,7 +135,7 @@ Set & Pearson & Spearman \\
 \textit{MSRpar} & 1.0000 & 1.0000 \\
 \textit{SMTeuroparl} & 1.0000 & 1.0000 \\
 \textit{SMTnews} & 1.0000 & 1.0000 \\
-\textit{OnSw} & 1.0000 & 1.0000 \\
+\textit{OnWN} & 1.0000 & 1.0000 \\
 \bottomrule
 \end{tabular}
 \end{center}
