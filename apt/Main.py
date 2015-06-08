@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from Model import Model
-import sys;
+import sys, locale;
 
 # ucitava primjere iz zadane datoteke
 def load_data_X(file):
@@ -100,8 +100,36 @@ def test(X_train_files, y_train_files, X_test_files, y_test_files, train_out_fil
 
     return model
 
+
+# funkcija za interaktivni demo
+def interactive_demo(X_train_files, y_train_files, C, gamma, epsilon):
+    print 'Zapocinje ucenje modela'
+
+    X_train = []
+    y_train = []
+    for file in X_train_files:
+        X_train.extend(load_data_X(file))
+    for file in y_train_files:
+        y_train.extend(load_data_y(file))
+
+    model = Model()
+    model.train(X_train, y_train, True, C, gamma, epsilon)
+
+    print 'Ucenje modela je zavrseno'
+
+    while True:
+        print 'Unesite 1. recenicu:'
+        x1 = raw_input().decode(sys.stdin.encoding or locale.getpreferredencoding(True))
+        print 'Unesite 2. recenicu:'
+        x2 = raw_input().decode(sys.stdin.encoding or locale.getpreferredencoding(True))
+
+        x = [x1, x2]
+        y = model.predict(x)[0]
+        print clamp(y, 0, 5)
+
+
 # pokreni ucenje i evaluaciju
-k = 1
+k = 5
 if len(sys.argv) >= 2:
     k = int(sys.argv[1])
 print "Trazena akcija k =", k
@@ -148,3 +176,9 @@ elif k == 4:
          '../data/test-gold/STS.gs.SMTeuroparl.txt', '../data/test-gold/STS.gs.surprise.SMTnews.txt',
          '../data/test-gold/STS.gs.surprise.OnWN.txt'],
         '', 'All_test.out', '', 'All_test_bad.txt', model)
+elif k == 5:
+    print 'Interaktivni demo'
+    interactive_demo(['../data/train/STS.input.MSRpar.txt', '../data/train/STS.input.MSRvid.txt',
+                      '../data/train/STS.input.SMTeuroparl.txt'],
+                     ['../data/train/STS.gs.MSRpar.txt', '../data/train/STS.gs.MSRvid.txt',
+                      '../data/train/STS.gs.SMTeuroparl.txt'], 2, 2, 0.25)
