@@ -18,12 +18,12 @@
 
 %VAŽNO: Zakomentirajte sljedeću liniju kada šaljete rad na recenziju
 % karlo: i mailove
-\name{Kristijan Biščanić, Karlo Dumbović, Nino Jagar} 
+% \name{Kristijan Biščanić, Karlo Dumbović, Nino Jagar} 
 
 \address{
 University of Zagreb, Faculty of Electrical Engineering and Computing\\
 Unska 3, 10000 Zagreb, Croatia\\ 
-\texttt{\{kristijan.biscanic,karlo.dumbovic,nino.jagar\}@fer.hr}\\
+% \texttt{\{kristijan.biscanic,karlo.dumbovic,nino.jagar\}@fer.hr}\\
 }
 
          
@@ -166,8 +166,6 @@ Shallow named entity recognizer and classifier treats every capitalized word as 
 \subsection{Model Training}
 
 We used LIBSVM \citep{chang2011libsvm} to train a separate SVR model for each training set. The model was hyper-optimized (in terms of Pearson correlation) by grid search with nested cross-validation ($k=10$) to find the optimal parameters $C$, $\gamma$ and $\epsilon$. Final prediction results are then trimmed to a $[0,5]$ interval. For the surprise test set \textit{SMTnews} we trained our system on \textit{SMTeuroparl} train set, and for the \textit{OnWN} test set we trained the system on the union of all provided train sets. The performance on train sets is shown in Table~\ref{tab:train-results-table}.
-
-TODO - koji su dobri/losi featurei?
 
 \begin{table}[h]
 \caption{Cross-validated results on train sets}
