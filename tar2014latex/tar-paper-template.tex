@@ -144,7 +144,7 @@ We represent each sentence in the vector space as a single vector $u$. $u$ is ca
 \begin{equation}
 u(S) = \sum_{w \in S} \textbf{x}_w
 \end{equation}
-$\textbf{x}_w$ is a word vector taken from pre-trained word vectors file that was trained by \textit{word2vec} tool for computing continuous distributed representation of words on part of Google News dataset. After calculating the representations of both sentences we define our feature as:
+$\textbf{x}_w$ is a word vector taken from pre-trained word vectors file that was trained by \textit{word2vec} tool for computing continuous distributed representation of words \citep{google_word2vec_web} on one of Wikipedia datasets containing 400,000 words. After calculating the representations of both sentences we define our feature as:
 \begin{equation}
 vsss(S_1, S_2) = |\cos(u(S_1), u(S_2))|
 \end{equation}
@@ -177,9 +177,9 @@ TODO - koji su dobri/losi featurei?
 \toprule
 Set & Pearson & Spearman & $C$ & $\gamma$ & $\epsilon$ \\
 \midrule
-\textit{MSRvid} & 0.8924 & 0.8894 & 64 & 0.25 & 0.4 \\
-\textit{MSRpar} & 0.7398 & 0.6663 & 32768 & 0.00049 & 0.6 \\
-\textit{SMTeuroparl} & 0.8191 & 0.6713 & 16 & 0.25 & 0.05 \\
+\textit{MSRvid} & 0.8824 & 0.8797 & 4 & 1 & 0.3 \\
+\textit{MSRpar} & 0.7559 & 0.68 & $2^{10}$ & $2^{-6}$ & 0.7 \\
+\textit{SMTeuroparl} & 0.8309 & 0.6807 & 8 & 0.5 & 0.005 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -197,11 +197,11 @@ We evaluated our model using Pearson and Spearman correlation coefficients. The 
 \toprule
 Set & Pearson & Spearman \\
 \midrule
-\textit{MSRvid} & 0.87926 & 0.87531 \\
-\textit{MSRpar} & 0.66632 & 0.64689 \\
-\textit{SMTeuroparl} & 0.37214 & 0.40216 \\
-\textit{SMTnews} & 0.54115 & 0.28306 \\
-\textit{OnWN} & 0.69060 & 0.66542 \\
+\textit{MSRvid} & 0.8579 & 0.8569 \\
+\textit{MSRpar} & 0.6955 & 0.6581 \\
+\textit{SMTeuroparl} & 0.512 & 0.5317 \\
+\textit{SMTnews} & 0.531 & 0.3145 \\
+\textit{OnWN} & 0.6577 & 0.6402 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -215,9 +215,9 @@ Set & Pearson & Spearman \\
 \toprule
 & Pearson & Spearman \\
 \midrule
-\textit{ALL} & 0.79688 & 0.76381\\
-\textit{ALLnrm} & 0.86295 & 0.79843 \\
-\textit{Mean} & 0.67035 & 0.62363 \\
+\textit{ALL} & 0.8065 & 0.7614\\
+\textit{ALLnrm} & 0.8535 & 0.7995 \\
+\textit{Mean} & 0.6773 & 0.6411 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -238,7 +238,7 @@ In order to analyse situations in which our system most likely fails, during eve
 
 \section{Conclusion and Future Work}
 
-In this paper we presented our system for assessing the semantic textual similarity between two short texts based on machine learning. This system was designed as a solution to the Text Analysis and Retrieval project assignment. The whole system was written in Python, utilizing several libraries such as NLTK, NumPy, scikit-learn and LIBSVM. Training and testing of the system was done on datasets from the SemEval-2012 Semantic Textual Similarity Task. Performance of the system was evaluated using Pearson and Spearman correlations with human similarity judgements and, according to our scores, would be ranked 4th on the said competition.
+In this paper we presented our system for assessing the semantic textual similarity between two short texts based on machine learning. This system was designed as a solution to the Text Analysis and Retrieval project assignment. The whole system was written in Python, utilizing several libraries such as NLTK, NumPy, scikit-learn and LIBSVM. Training and testing of the system was done on datasets from the SemEval-2012 Semantic Textual Similarity Task. Performance of the system was evaluated using Pearson and Spearman correlations with human similarity judgements and, according to our scores, would be ranked 1st according to \textit{Mean Rank} and 5th according to \textit{All rank} on the said competition.
 
 System is performing very well on three of five test sets and there is plenty of room for improvement. There certainly exist features that could be implemented and would possibly improve performance of this system. Some of these features are full NERC, syntactic roles similarity, syntactic dependencies overlap, greedy lemma aligning overlap, semantic role labelling, etc.
 

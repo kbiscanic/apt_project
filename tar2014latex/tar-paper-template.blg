@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2014/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: tar-paper-template.aux
 The style file: tar2014.bst
 Database file #1: tar2014.bib
-You've used 10 entries,
+You've used 11 entries,
             2490 wiz_defined-function locations,
-            607 strings with 6592 characters,
-and the built_in function-call counts, 4933 in all, are:
-= -- 520
-> -- 217
+            610 strings with 6694 characters,
+and the built_in function-call counts, 5208 in all, are:
+= -- 549
+> -- 224
 < -- 5
-+ -- 76
-- -- 76
-* -- 361
-:= -- 767
-add.period$ -- 44
-call.type$ -- 10
-change.case$ -- 77
-chr.to.int$ -- 10
-cite$ -- 10
-duplicate$ -- 200
-empty$ -- 361
-format.name$ -- 88
-if$ -- 1057
++ -- 78
+- -- 78
+* -- 374
+:= -- 811
+add.period$ -- 48
+call.type$ -- 11
+change.case$ -- 82
+chr.to.int$ -- 11
+cite$ -- 11
+duplicate$ -- 211
+empty$ -- 387
+format.name$ -- 91
+if$ -- 1116
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 8
-newline$ -- 63
-num.names$ -- 30
-pop$ -- 96
+newline$ -- 69
+num.names$ -- 33
+pop$ -- 106
 preamble$ -- 1
-purify$ -- 87
+purify$ -- 93
 quote$ -- 0
-skip$ -- 166
+skip$ -- 177
 stack$ -- 0
-substring$ -- 252
-swap$ -- 68
+substring$ -- 257
+swap$ -- 70
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 88
 warning$ -- 0
-while$ -- 40
-width$ -- 13
-write$ -- 144
+while$ -- 42
+width$ -- 14
+write$ -- 157

@@ -31,6 +31,13 @@ Chih-Chung Chang and Chih-Jen Lin.
 \newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
   2(3):27.
 
+\bibitem[\protect\citename{Google}2015]{google_word2vec_web}
+Google.
+\newblock 2015.
+\newblock word2vec - tool for computing continuous distributed representations
+  of words.
+\newblock [Online; accessed 7-June-2015].
+
 \bibitem[\protect\citename{Lin \bgroup et al.\egroup }2012]{lin2012syntactic}
 Yuri Lin, Jean-Baptiste Michel, Erez~Lieberman Aiden, Jon Orwant, Will
   Brockman, and Slav Petrov.
